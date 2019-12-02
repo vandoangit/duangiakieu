@@ -1,0 +1,202 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 27-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*=============================== Reset CSS ==================================*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/*=============================== Tag Format =================================*/
+
+/*---------------------------------- Tag H -----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+    margin:0px;
+    padding:0px;
+    font-weight:normal;
+}
+
+/*--------------------------------- Tag Link ---------------------------------*/
+a,a:visited,a:active,a:hover{
+    color:00F;
+    text-decoration:none;
+}
+
+/*---------------------------------- Tag Img ---------------------------------*/
+img{
+    border:0px;
+}
+
+/*----------------------------------- Tag UL ---------------------------------*/
+ul{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+/*================================== Tag Body ================================*/
+body{	
+    margin:10px 20px;
+    font-size:14px;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#000000;
+}
+
+.public_message_admin .message_admin_failed{
+    font-size:14px;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#F00;
+}
+
+/*================================= Header Part ==============================*/
+#body_header{
+    height:54px;
+    background:url(../images/login/bg_header.png) repeat-x left top;
+}
+
+#body_header div{
+    height:54px;
+    background:url(../images/login/bg_header_lt.png) no-repeat left top;
+}
+
+#body_header div div{
+    height:54px;
+    background:url(../images/login/bg_header_tr.png) no-repeat top right;
+    text-align:left;
+}
+
+#body_header .title{
+    padding-left:200px;
+    line-height:45px;
+    font-size:22px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    color:#FFF;
+}
+
+/*============================ Content Web Part ==============================*/
+#body_content{
+    height:440px;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+}
+
+#body_content .body_login{	
+    position:relative;	
+    top:70px;		
+    margin:0px auto;	
+    width:577px;
+    height:287px;
+    background:url(../images/login/login_box.png) no-repeat left top;
+    text-align:left;			
+} 
+
+/*------------------------------- Login Welcome ------------------------------*/
+#body_content .body_login .login_welcome{
+    position:absolute;
+    z-index:1;
+    left:39px;
+    top:20px;
+    width:474px;
+    height:49px;
+    padding-left:20px;
+    line-height:49px;
+    font-size:16px;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#00F; 
+}
+
+/*------------------------------- Login Content ------------------------------*/
+#body_content .body_login .login_content{
+    position:absolute;
+    z-index:1;
+    left:165px;
+    top:70px;
+    width:357px;
+    height:177px;
+    border-left:1px #CCC solid;
+    padding-left:10px;
+} 
+
+#body_content .body_login .login_content table{
+    line-height:30px;
+}
+
+/*................................ Label Login ...............................*/
+#body_content .body_login .login_content table .login_label{
+    font-size:12px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:bold;	
+    color:#555555; 
+}
+
+/*................................ Input Login ...............................*/
+#body_content .body_login .login_content table .login_input{
+    width:220px;
+    height:16px;
+    padding:1px 3px 3px 3px;
+    font-size:14px;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#555555; 
+}
+
+/*............................... Select Login ...............................*/
+#body_content .body_login .login_content table .login_select{
+    width:220px;
+    height:20px;
+    font-size:14px;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#555555; 
+}
+
+/*................................ Label Login ...............................*/
+#body_content .body_login .login_content table .login_button{ 
+    margin:10px 0px;	
+    width:106px;
+    border:0px;
+    background:url(../images/login/login_button.png) no-repeat top left;
+    padding:5px 7px 6px 7px;
+    font-size:14px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;	
+    cursor:pointer;
+}
+
+/*=========================== Bottom Web Part ================================*/
+#body_content_bottom{
+    background:url(../images/login/bg_bottom.png) repeat-x left top;
+}
+
+#body_content_bottom div{
+    background:url(../images/login/bg_bottom_lt.png) no-repeat left top;
+}
+
+#body_content_bottom div div{
+    background:url(../images/login/bg_bottom_tr.png) no-repeat top right;
+    height:15px;
+}
+
+/*============================== Footer Part =================================*/
+#footer .copyright{
+    margin:10px;
+    line-height:20px;
+    text-align:center;
+    font-size:12px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:bold;
+}
+
+#footer .copyright a{
+    font-size:12px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    color:#00F;
+}
+
+
+

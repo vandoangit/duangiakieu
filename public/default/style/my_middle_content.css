@@ -1,0 +1,120 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*================================= Page Part ================================*/
+
+#body_content .div_pagination_admin{
+    clear:both;
+    overflow:hidden;
+}
+
+#body_content .div_pagination_admin .div_pagination_admin_content{
+    float:right;
+    padding:0px 10px 0px 0px;
+    overflow:hidden;
+}
+
+/*----------------------------- Item Div Page --------------------------------*/
+#body_content .div_pagination_admin_content div{
+    float:left;
+    margin:0px 3px;
+}
+
+/*------------------------------- Item A Page --------------------------------*/
+#body_content .div_pagination_admin_content div a{
+    float:left;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*---------------------------- Current Div Page ------------------------------*/
+#body_content .div_pagination_admin_content div.cur_tag_page{ 
+    width:15px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:16px;
+    color:#FF0000;
+    cursor:default;
+}
+
+/*-------------------------- Item First Last Page ----------------------------*/
+#body_content .div_pagination_admin_content div.first_tag_page a,
+#body_content .div_pagination_admin_content div.last_tag_page a{    
+    width:40px;
+    border:1px solid #C7C7C7;
+    background:#7EC0F2;
+    font-weight:bold;
+    color:#FFF;
+}
+
+/*----------------------------- Item Next Page -------------------------------*/
+#body_content .div_pagination_admin_content div.next_tag_page a{  
+    width:15px;
+    border:1px solid #C7C7C7;
+    background:#E0E0E0 url(../images/pagination/btnNext.gif) no-repeat center center;
+}
+
+/*----------------------------- Item Prev Page -------------------------------*/
+#body_content .div_pagination_admin_content div.prev_tag_page a{
+    width:15px;
+    border:1px solid #C7C7C7;
+    background:#E0E0E0 url(../images/pagination/btnPrev.gif) no-repeat center center;
+}
+
+/*---------------------------- Item Number Page ------------------------------*/
+#body_content .div_pagination_admin_content div.num_tag_page a{
+    width:15px;
+    font-size:16px;
+}
+
+/*========================== Sidebar Detail Product ==========================*/
+
+#body_content .module_content .sidebar_detail_product{
+    overflow:hidden;
+}
+
+#body_content .module_content .sidebar_detail_product a{
+    float:left;
+    white-space:nowrap;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FFF;
+}
+
+/*============================ Module Product Home ===========================*/
+
+#module_product_home .item_module_product{
+    float:left;
+    width:310px;
+    margin:0px 10px;
+}
+
+#module_product_home .item_module_product .title_module_product{
+    background:url(../images/module_content/bg_title_module_product_home.png) no-repeat left top;
+    height:40px;
+    padding-left:20px;
+    line-height:35px;
+}
+
+#module_product_home .item_module_product .title_module_product a{
+    text-transform:capitalize;
+    font-size:15px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FFF;
+}
+
+#module_product_home .item_module_product .content_module_product{
+    border-left:1px solid #CCC;
+    margin:0px 0px 0px 8px;
+}

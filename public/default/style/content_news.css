@@ -1,0 +1,232 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 30-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*============================== List News Home ==============================*/
+#body_content .list_news_home{
+    overflow:hidden;
+    padding:10px 0px 0px 0px;
+}
+
+/*------------------------------ Body Item News ------------------------------*/
+#body_content .list_news_home .item_news{
+	float:left;
+    margin:0px 10px 15px 10px;
+	width:450px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    overflow:hidden;
+}
+
+/*-------------------------------- Title News --------------------------------*/
+#body_content .list_news_home .item_news h3{
+    margin:0px 0px 8px 0px;
+}
+
+#body_content .list_news_home .item_news h3 a{
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;
+}
+
+/*-------------------------------- Title Img ---------------------------------*/
+#body_content .list_news_home .item_news img{
+    float:left;
+    margin:0px 5px 5px 0px;
+    width:160px;
+    border:1px #e7e7e7 solid;
+    padding:1px;
+}
+
+/*================================= List News ================================*/
+#body_content .list_news{
+    overflow:hidden;
+}
+
+/*------------------------------ Body Item News ------------------------------*/
+#body_content .list_news .item_news{
+	float:left;
+    margin:0px 10px 15px 10px;
+	width:450px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    overflow:hidden;
+}
+
+/*-------------------------------- Title News --------------------------------*/
+#body_content .list_news .item_news h3{
+    margin:0px 0px 8px 0px;
+}
+
+#body_content .list_news .item_news h3 a{
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;
+}
+
+/*-------------------------------- Title Img ---------------------------------*/
+#body_content .list_news .item_news img{
+    float:left;
+    margin:0px 5px 5px 0px;
+    width:160px;
+    border:1px #e7e7e7 solid;
+    padding:1px;
+}
+
+/*============================= List News Sidebar ============================*/
+#body_content .list_news_sidebar{
+    overflow:hidden;
+}
+
+/*------------------------------ Body Item News ------------------------------*/
+#body_content .list_news_sidebar .item_news{
+    margin:0px 10px 15px 10px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    overflow:hidden;
+}
+
+/*-------------------------------- Title News --------------------------------*/
+#body_content .list_news_sidebar .item_news h3{
+    margin:0px 0px 8px 0px;
+}
+
+#body_content .list_news_sidebar .item_news h3 a{
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;
+}
+
+/*--------------------------------- Img News ---------------------------------*/
+#body_content .list_news_sidebar .item_news img{
+    float:left;
+    margin:0px 5px 5px 0px;
+    width:180px;
+    border:1px #e7e7e7 solid;
+    padding:1px;
+}
+
+/*================================ Detail News ===============================*/
+#body_content .detail_news{
+    padding:0px 10px 15px 10px;
+    overflow:hidden;
+}
+
+/*-------------------------------- Title News --------------------------------*/
+#body_content .detail_news .detail_news_title h2{
+    padding:0px 10px 15px 0px;
+    line-height:20px;
+    font-size:17px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#176a87;
+}
+
+/*-------------------------------- Content News ------------------------------*/
+#body_content .detail_news .detail_news_content{
+    line-height:20px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*-------------------------------- Involved News -----------------------------*/
+#body_content .news_involved{
+    padding:0px 10px 10px 10px;
+    clear:both;
+}
+
+#body_content .news_involved .news_involved_title{
+    padding:0px 10px 5px 20px;
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FF0000;
+}
+
+#body_content .news_involved ul li{
+    padding:3px 10px 5px 25px;
+    line-height:18px;
+}
+
+#body_content .news_involved ul a{
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#176a87;
+}
+
+/*---------------------------------- Show Video ------------------------------*/
+#body_content .detail_news .detail_news_video{
+    float:left;
+    margin:0px 8px 8px 0px;
+    width:330px;
+    height:240px;
+}
+
+/*============================ Detail News Sidebar ===========================*/
+#body_content .detail_news_sidebar{
+	float:left;
+	width:650px;
+    padding:0px 10px 15px 10px;
+    overflow:hidden;
+}
+
+/*-------------------------------- Title News --------------------------------*/
+#body_content .detail_news_sidebar .detail_news_title h2{
+    padding:0px 10px 15px 0px;
+    line-height:20px;
+    font-size:17px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#3e4095;
+}
+
+/*-------------------------------- Content News ------------------------------*/
+#body_content .detail_news_sidebar .detail_news_content{
+    line-height:20px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*-------------------------------- Involved News -----------------------------*/
+#body_content .news_involved_sidebar{
+	float:left;
+	width:300px;
+}
+
+#body_content .news_involved_sidebar .news_involved_title{
+    padding:0px 10px 5px 20px;
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FF0000;
+}
+
+#body_content .news_involved_sidebar ul li{
+    padding:3px 10px 5px 25px;
+    line-height:18px;
+}
+
+#body_content .news_involved_sidebar ul a{
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#3e4095;
+}

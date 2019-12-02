@@ -1,0 +1,826 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 27-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*================================= Page Part ================================*/
+
+#middle_content .div_pagination_admin{
+    overflow:hidden;
+}
+
+#middle_content .div_pagination_admin .div_pagination_admin_content{
+    float:right;
+    padding:0px 10px 0px 0px;
+    overflow:hidden;
+}
+
+/*------------------------------- Item Div Page ------------------------------*/
+#middle_content .div_pagination_admin_content div{
+    float:left;
+    margin:0px 3px;
+}
+
+/*------------------------------- Item A Page --------------------------------*/
+#middle_content .div_pagination_admin_content div a{
+    float:left;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000000;
+}
+
+/*---------------------------- Current Div Page ------------------------------*/
+#middle_content .div_pagination_admin_content div.cur_tag_page{ 
+    width:15px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:16px;
+    color:#FF0000;
+    cursor:default;
+}
+
+/*-------------------------- Item First Last Page ----------------------------*/
+#middle_content .div_pagination_admin_content div.first_tag_page a,
+#middle_content .div_pagination_admin_content div.last_tag_page a{    
+    width:40px;
+    border:1px solid #C7C7C7;
+    background:#7EC0F2;
+    font-weight:bold;
+    color:#FFF;
+}
+
+/*----------------------------- Item Next Page -------------------------------*/
+#middle_content .div_pagination_admin_content div.next_tag_page a{  
+    width:15px;
+    border:1px solid #C7C7C7;
+    background:#E0E0E0 url(../images/pagination/btnNext.gif) no-repeat center center;
+}
+
+/*----------------------------- Item Prev Page -------------------------------*/
+#middle_content .div_pagination_admin_content div.prev_tag_page a{
+    width:15px;
+    border:1px solid #C7C7C7;
+    background:#E0E0E0 url(../images/pagination/btnPrev.gif) no-repeat center center;
+}
+
+/*---------------------------- Item Number Page ------------------------------*/
+#middle_content .div_pagination_admin_content div.num_tag_page a{  
+    width:15px;
+    font-size:16px;
+}
+
+/*============================ Middle Content Web ============================*/
+#content{
+    margin:10px auto 0px auto;
+    width:930px;
+}
+
+/*=======================Dinh Dang Cho Tieu De Tren===========================*/
+#content .title_admin_body{
+    background:url(../images/title_top_center.png) repeat-x top center;
+}
+
+#content .title_admin_body_left{
+    background:url(../images/title_top_left.png) no-repeat top left;
+}
+
+#content .title_admin_body_right{
+    height:42px;
+    background:url(../images/title_top_right.png) no-repeat top right;
+    padding-left:20px;
+    line-height:42px;
+    font-size:20px;
+    font-weight:bold;
+    font-style:italic;
+    color:#FFFFFF; 
+}
+
+/*--------------------Dinh Dang Cho Phan Select Loc---------------------------*/
+#content .title_admin_body .title_admin_content_left{
+    float:left;
+    width:410px;
+}
+
+#content .title_admin_body .title_admin_content_right{
+    float:left;
+    width:500px;
+}
+
+#content .title_admin_body .title_admin_content_right_1{
+    float:right;
+    text-align:right;
+    width:480px;
+    font-size:12px;
+    line-height:40px;
+    padding-right:20px;
+}
+
+#content .title_admin_body .title_admin_content_right span{
+    padding-right:10px;
+    margin-top:10px;
+}
+
+#content .title_admin_body .title_admin_content_right select{
+    height:22px;
+    width:250px;
+    padding-top:2px;
+    text-transform:none;
+}
+
+/*================Dinh Dang Cho Chuc Nang Them Xoa Su Ben Phai================*/
+#content .function_admin_body{
+    background:#f4f9fe url(../images/function_center.png) repeat-x bottom left;
+}
+
+#content .function_admin_body_left{
+    background:url(../images/function_left.png) no-repeat left;
+}
+
+#content .function_admin_body_right{
+    background:url(../images/function_right.png) no-repeat right;
+    height:62px;
+    padding-right:15px;
+}
+
+#content .function_admin_body_right a.delete_all_admin_site:hover,
+#content .function_admin_body_right a.update_all_admin_site:hover,
+#content .function_admin_body_right a.add_all_admin_site:hover,
+#content .function_admin_body_right a.authorization_all_admin_site:hover,
+#content .function_admin_body_right a.back_button_all_admin_site:hover,
+#content .function_admin_body_right a.save_all_admin_site:hover{
+    background-color:#DFEFFC;  
+    border:1px solid #C5DBEC;
+}
+
+/*--------------------Dinh Dang Cho Phan Them Xoa Sua-------------------------*/
+#content .function_admin_body_right a.delete_all_admin_site{
+    float:right;
+    background:url(../images/action/delete_all.png) no-repeat 6px -1px;
+    width:50px;
+    padding-top:35px;
+    height:15px;
+    margin-top:5px;
+    text-align:center;
+    margin-right:5px;
+    color:#00F;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+#content .function_admin_body_right a.update_all_admin_site{
+    float:right;
+    background:url(../images/action/update_all.png) no-repeat 7px 0px;
+    width:50px;
+    padding-top:35px;
+    height:15px;
+    margin-top:5px;
+    text-align:center;
+    margin-right:5px;
+    color:#00F;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+#content .function_admin_body_right a.add_all_admin_site{
+    float:right;
+    background:url(../images/action/add_all.png) no-repeat 10px -2px;
+    width:60px;
+    text-align:center;
+    margin-right:5px;
+    padding-top:35px;
+    height:15px;
+    margin-top:5px;
+    color:#00F;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+#content .function_admin_body_right a.authorization_all_admin_site{
+    float:right;
+    background:url(../images/action/authorization_all.png) no-repeat 25px 3px;
+    width:75px;
+    text-align:center;
+    margin-right:5px;
+    padding-top:35px;
+    height:15px;
+    margin-top:5px;
+    color:#00F;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+#content .function_admin_body_right a.back_button_all_admin_site{
+    float:right;
+    background:url(../images/action/back_all.png) no-repeat 12px 1px;
+    width:60px;
+    text-align:center;
+    margin-right:5px;
+    padding-top:35px;
+    height:15px;
+    margin-top:5px;
+    color:#00F;
+    font-weight:normal;
+}
+
+#content .function_admin_body_right a.save_all_admin_site{
+    float:right;
+    background:url(../images/action/save_all.png) no-repeat 7px 1px;
+    width:50px;
+    text-align:center;
+    margin-right:5px;
+    padding-top:35px;
+    height:15px;
+    margin-top:5px;
+    color:#00F;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+/*======================Dinh Dang Cho Phan Content Manager====================*/
+#content .content_admin_body{
+    width:930px;
+    margin-bottom:3px;
+}
+
+#content .content_admin_body_add{
+    width:898px;
+    background:url(../images/bg_body_content.png);
+    border:1px double #CCCCCC;
+    padding:15px;
+    margin-bottom:3px;
+}
+
+#content .content_admin_body_authorization{
+    background:url(../images/bg_body_content.png);
+    padding:10px 7px;
+    border:1px double #CCCCCC;
+    width:914px;
+    overflow:hidden;
+}
+
+#content .content_admin_body_right{
+    width:445px;
+    float:left;
+    padding-left:7px;
+}
+
+#content .content_admin_body_left{
+    width:460px;
+    float:left;
+}
+
+/*-----------------Dinh Dang Cho Phan Content Manager Right ------------------*/
+#content .content_admin_body_right fieldset legend{
+    margin-left:20px;
+    padding:0px 5px;
+    color:#cd0a0a;
+}
+
+#content .content_admin_body_right .img_user_avatar{
+    float:left;
+    width:120px;
+    text-align:center;
+    margin:15px 5px 5px 5px
+}
+
+#content .content_admin_body_right .img_user_avatar img{
+    width:115px;
+    border:1px solid #C7C7C7;
+    padding:1px;
+}
+
+#content .content_admin_body_right .info_user{
+    float:left;
+    width:296px;
+    margin:10px 5px 5px 5px
+}
+
+#content .content_admin_body_right #info_group{
+    width:90%;
+    float:inherit;
+    padding-left:5%;
+}
+
+
+#content .content_admin_body_right .info_user ul li{
+    line-height:18px;
+    font-weight:bold;
+    color:#333333;
+}
+
+#content .content_admin_body_right .info_user ul li span{
+    font-weight:normal;
+    color:#000000;
+}
+
+
+#content .content_admin_body_right .authorization_add{
+    margin:10px 5px 10px 15px
+}
+
+#content .content_admin_body_right .authorization_add ul li{
+    padding-bottom: 10px;
+}
+
+#content .content_admin_body_right .select_authorization{
+    height:20px;
+    width:270px;
+    text-transform:none;
+    margin:2px 2px 0px 15px;
+}
+
+#content .content_admin_body_right .button_add_admin{
+    background:url(../images/button_add.png) no-repeat;
+    width:81px;
+    height:24px;
+    border:0px;
+    font-weight:bold;
+    color:#666666;
+    margin:5px 0px 0px 330px;
+    padding:0px;
+    font-size:11px;
+}
+
+/*------------------Dinh Dang Cho Phan Content Manager Left ------------------*/
+
+/*----------------------- Table Content Admin No Sort ------------------------*/
+#content table.table_no_sort{
+    border-collapse:collapse;
+    width:100%;
+    border-right:1px #C5DBEC solid;
+    border-left:1px #C5DBEC solid;
+}
+
+#content table.table_no_sort div{
+    cursor:default;
+}
+
+#content table.table_no_sort .title_no_sort th{
+    background:url(../images/title_seo_table.png) repeat-x scroll 50% 50% #DFEFFC;
+    padding:6px 0px;
+    border:1px solid #CCCCCC;
+    line-height:15px;
+    color:#2E6E9E;
+    font-weight:bold;
+}
+
+#content table.table_no_sort .content_no_sort td{
+    border-right:1px #999 dotted;
+    border-bottom:1px #eaead1 solid;
+    padding:5px 8px;
+    line-height:15px;
+    font-size:12px;
+}
+
+#content table.table_no_sort tr div.title_record{
+    color:#2E6E9E;
+    font-weight:bold;
+}
+
+#content table.table_no_sort tr div.title_table_database,
+#content table.table_no_sort tr div.title_table_database a{
+    cursor:default;
+    color:#FD7400;
+    font-weight:bold;
+}
+
+#content table.table_no_sort tr div.link_table a{
+    cursor:pointer;
+    color:#3380CB;
+    font-weight:bold;
+}
+
+#content table.table_no_sort tr div.title_table_important,
+#content table.table_no_sort tr div.title_table_important a{
+    cursor:default;
+    color:#EA151E;
+    font-weight:bold;
+}
+
+/*----------------------Dinh Dang Cho Phan Update Thu Tu----------------------*/
+#content .content_admin_body_table .ajax_update_order_input{
+    background:url(../images/action/edit.gif) no-repeat center right;
+}
+
+#content .content_admin_body_table .ajax_update_order{
+    width:50px;
+    height:20px;
+    text-align:center;
+}
+
+/*----------------------Dinh Dang Cho Phan An Hien----------------------------*/
+#content .content_admin_body_table .ajax_public_yes{
+    height:25px; 
+    background:url(../images/action/active.png) no-repeat top center;
+}
+
+#content .content_admin_body_table .ajax_public_no{
+    height:25px; 
+    background:url(../images/action/active.png) no-repeat bottom center;
+}
+
+/*----------------------Dinh Dang Cho Phan Noi Bat----------------------------*/
+#content .content_admin_body_table .ajax_prominent_yes{
+    height:25px; 
+    background:url(../images/action/active.png) no-repeat top center;
+}
+
+#content .content_admin_body_table .ajax_prominent_no{
+    height:25px; 
+    background:url(../images/action/active.png) no-repeat bottom center;
+}
+
+/*----------------------Dinh Dang Cho Phan Kich Hoat--------------------------*/
+#content .content_admin_body_table .ajax_active{
+    height:25px; 
+    background:url(../images/action/active.png) no-repeat top center;
+}
+
+#content .content_admin_body_table .ajax_inactive{
+    height:25px; 
+    background:url(../images/action/active.png) no-repeat bottom center;
+}
+
+/*---------------------------- Image Admin Manager ---------------------------*/
+#content .content_admin_body_table .lightbox_admin img{
+    height:25px;
+    max-width:60px;
+    margin:1px;
+    border:1px solid #CCCCCC;
+    padding:1px;
+}
+
+/*----------------------Dinh Dang Cho Phan Article----------------------------*/
+#content .content_admin_body_table .content_article{
+    text-align:justify;
+    padding:3px 0px;
+    color:#333333 ;
+    font:11px arial;
+    line-height:14px;
+}
+
+#content .content_admin_body_table .content_article h2.title_article{
+    margin:0px 0px 5px 0px;
+}
+
+#content .content_admin_body_table .content_article h2.title_article a{
+    font-size:12px;
+    color:#000000;
+    font-weight:bold;
+}
+
+#content .content_admin_body_table .content_article a.img_article img{
+    width:90px;
+    border:1px #CCCCCC solid;
+    padding:1px;
+    margin:0px 5px 5px 0px;
+}
+
+/*------------------------- Dinh Dang Cho Phan Author ------------------------*/
+#content .content_admin_body_table .content_news_author{
+    float:right;
+	padding:2px 5px 2px 0px;
+	font-weight:bold;
+	color:#FF0000;
+	text-transform:capitalize;
+	cursor:default;
+}
+
+/*----------------------------- Support Status -------------------------------*/
+#content .content_admin_body_table a.support_contact{
+    font-weight:bold;
+    font-size:12px;
+    color:#00F; 
+}
+
+#content .content_admin_body_table a.support_yahoo img{
+    border:0px;
+    width:100px;
+}
+
+#content .content_admin_body_table a.support_skype img{
+    border:0px;
+    width:120px;
+}
+
+#content .content_admin_body_table a.support_name{
+    font-size:16px;
+    font-weight:bold;
+}
+
+/*=======================Dinh Dang Cho Phan Chi Tiet Hoa Don==================*/
+
+/*-------------------Dinh Dang Cho Phan Bao Quanh Chi Tiet--------------------*/
+div.innerDetails{
+    overflow:hidden;
+}
+
+/*--------------------------------Tieu De Hoa Don-----------------------------*/
+div.innerDetails .title_order_detail{
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    color:#FF000B;
+    margin:10px 0px 10px 0px;
+}
+
+/*------------------------------Thong Tin Khach Hang--------------------------*/
+div.innerDetails .customer_info_order{
+    overflow:hidden;
+    margin-bottom:10px;
+}
+
+div.innerDetails .customer_info_order li{
+    float:left;
+    width:450px;
+    line-height:25px;
+    text-align:left;
+    padding-left:8px;
+    font-weight:bold;
+    font-size:11px;
+    text-align:left;
+}
+
+div.innerDetails .customer_info_order li label{
+    color:#2E6E9E;
+    float:left;
+    width:120px;
+}
+
+div.innerDetails .customer_info_order li a{
+    font-size:12px;
+    font-weight:bold;
+    color:#000000;
+}
+
+div.innerDetails .customer_info_order li.clear{
+    clear:left;
+    padding-left:0px;
+}
+
+/*---------------------------Them San Pham Cho Hoa Don------------------------*/
+div.innerDetails .add_product_into_order{
+    height:22px; 
+    width:140px;
+    float:left;
+    margin-bottom:2px;
+    text-align:left;
+    background:url(../images/add_to_cart.gif) no-repeat 15px bottom;
+    cursor:pointer;
+}
+#ajax_add_to_cart{
+    cursor:pointer;
+    margin-left:120px;
+    width:140px;
+    background:url(../images/add_to_cart_button.gif) no-repeat center center;
+}
+/*-------------------------------Hoa Don San Pham-----------------------------*/
+div.innerDetails .product_info_order{
+    clear:left;
+}
+
+div.innerDetails .product_info_order table.table_order_detail{
+    border-collapse:collapse;
+    border-right:1px #C5DBEC solid;
+    border-left:1px #C5DBEC solid;
+}
+
+div.innerDetails .product_info_order table.table_order_detail th{
+    border:1px solid #CCCCCC;
+    color:#2E6E9E;
+    font-weight:bold;
+    font-size:11px;
+    padding:7px 5px;
+    background-color:#e9f5ff;
+}
+
+div.innerDetails .product_info_order table.table_order_detail td{
+    border-right:1px #999 dotted;
+    border-bottom:1px #eaead1 solid;
+    padding:2px 8px;
+    line-height:15px;
+    font-size:12px;
+}
+
+div.innerDetails .product_info_order table.table_order_detail td .ajax_update_order_detail_number_input{
+    background:url(../images/action/edit.gif) no-repeat center right;
+}
+
+div.innerDetails .product_info_order table.table_order_detail td .ajax_update_order{
+    width:70px !important;
+    height:20px;
+    text-align:center;
+}
+
+/*-------------------------------Tong Tien Hoa Don----------------------------*/
+div.innerDetails .total_price_order{
+    text-align:right;
+    padding-right:20px;
+    font-size:14px;
+    font-weight:bold;
+    color:#DD2234; 
+    margin-top:20px;
+}
+/*========================Dinh Dang Cho Phan Content Add======================*/
+
+/*---------------------Dinh Dang Cho Phan Chung Tat Ca------------------------*/
+#content .content_admin_body_add .fieldset_title_add{
+    padding-bottom:15px;
+}
+
+#content .content_admin_body_add .fieldset_title_add legend{
+    margin-left:15px;
+    padding:0px 5px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/*----------------Dinh Dang Cho Phan Them Thuoc Tinh San Pham-----------------*/  
+#content .content_admin_body_add .note_attributes_product{
+    font-size:12px;
+    margin:10px 0px;
+    font-weight:bold;
+    color:#00F; 
+}
+
+#ajax_add_attributes_product{
+    cursor:pointer;
+    color:#00F; 
+    font-weight:bold;
+    text-align:right;
+    width:145px;
+}
+
+#ajax_add_image_product{
+    cursor:pointer;
+    color:#00F; 
+    font-weight:bold;
+    text-align:right;
+    width:105px;
+}
+
+/*--------------------Dinh Dang Cho Phan Them Tong Quat-----------------------*/       
+#content .content_admin_body_add .note_attributes_product span{
+    color:#FF0000; 
+}
+
+#content .content_admin_body_add .ul_content_add{
+    margin-top:10px;
+}
+
+#content .content_admin_body_add .ul_content_add li{
+    clear:left;
+    margin-left:10px;
+    line-height:35px;
+    overflow:hidden;
+}
+
+#content .content_admin_body_add .ul_content_add .label_content_add{
+    float:left;
+    font-size:12px;
+    color:#2E6E9E;
+    font-weight:bold;
+    width:105px;
+    line-height:35px;
+    text-align:right;
+    padding-right:10px;
+}
+
+#content .content_admin_body_add .ul_content_add .input_text_add{
+    width:400px;
+    height:20px;
+    margin-right:20px;
+}
+
+#content .content_admin_body_add .ul_content_add .cke_skin_office2003{
+    float:right;
+}
+
+#content .content_admin_body_add .ul_content_add .input_text_add_browser{
+    width:320px;
+    height:20px;
+}
+
+#content .content_admin_body_add .ul_content_add .input_button_img_browser{
+    padding:3px 10px 5px 2px;
+    width:76px;
+    border:0px;
+    background:url(../images/button_browser.png) no-repeat top left;
+    text-align:center;
+    font-size:14px;
+    font-family:Tahoma,Helvetica,sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    color:#FFFFFF;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+#content .content_admin_body_add .ul_content_add .select_text_add{
+    width:400px;
+    height:20px;
+    margin-right:20px;
+}
+
+/*----------------------------- Them Nguoi Dung ------------------------------*/
+#content .content_admin_body_add .ul_content_add_user{
+    margin-top:10px;
+}
+
+#content .content_admin_body_add .ul_content_add_user li{
+    clear:left;
+    margin-left:10px;
+    line-height:35px;
+    overflow:hidden;
+}
+
+#content .content_admin_body_add .ul_content_add_user .label_content_add{    
+    float:left;
+    font-size:12px;
+    color:#2E6E9E;
+    font-weight:bold;
+    width:145px;
+    line-height:35px;
+    text-align:right;
+    padding-right:10px;
+}
+
+#content .content_admin_body_add .ul_content_add_user .input_text_add{
+    width:400px;
+    height:20px;
+    margin-right:20px;
+}
+
+#content .content_admin_body_add .ul_content_add_user .cke_skin_office2003{
+    float:right;
+}
+
+#content .content_admin_body_add .ul_content_add_user .input_text_add_browser{
+    width:320px;
+    height:20px;
+}
+
+#content .content_admin_body_add .ul_content_add_user .input_button_img_browser{
+    padding:3px 10px 5px 2px;
+    width:76px;
+    border:0px;
+    background:url(../images/button_browser.png) no-repeat top left;
+    text-align:center;
+    font-size:14px;
+    font-family:Tahoma,Helvetica,sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    color:#FFFFFF;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+#content .content_admin_body_add .ul_content_add_user .select_text_add{
+    width:400px;
+    height:20px;
+    margin-right:20px;
+}
+
+/*----------------------------- Cau Hinh Chung -------------------------------*/
+#content .content_admin_body_add .config_general_page{
+    margin:10px 10px 0px 10px;
+}
+
+#content .content_admin_body_add .config_general_page table{
+    border-collapse:collapse;
+    width:870px;
+}
+
+#content .content_admin_body_add .config_general_page .seo_title td{
+    background:url(../images/title_seo_table.png) repeat-x scroll 50% 50% #DFEFFC;
+    border:1px solid #CCCCCC;
+    color:#2E6E9E;
+    padding:6px 0px;
+    font-weight:bold;
+}
+
+#content .content_admin_body_add .config_general_page .seo_content td{
+    padding:7px;
+    border:1px #CCCCCC solid;
+    color:#2E6E9E;
+}
+
+#content .content_admin_body_add .config_general_page .input_seo_key{
+    width:450px;
+    height:20px;
+    margin-right:20px;
+    color:#000;
+}
+
+#content .content_admin_body_add .config_general_page .textarea_seo_key{
+    width:450px;
+    height:60px;
+    margin-right:20px;
+    color:#000;
+}

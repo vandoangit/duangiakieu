@@ -1,0 +1,34 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 27-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*---------------------------------- Layout ----------------------------------*/
+@import "my_layout.css";
+
+/*---------------------------------- Content ---------------------------------*/
+@import "content.css";
+
+/*---------------------------------- UI CSS ----------------------------------*/
+@import "ui/redmond/jquery-ui-1.8.4.custom.css";
+
+/*-------------------------------- Validation ----------------=---------------*/
+@import "validation/validationEngine.css";
+
+/*-------------------------- Datapicker Left Content -------------------------*/
+@import "datepicker/datepicker.css";
+
+/*---------------------------- UI Data Table Sort ----------------------------*/
+@import "ui/redmond/jquery.ui.dataTables.css";
+
+/*--------------------------- UI View Control Panel --------------------------*/
+@import "ui/redmond/jquery.ui.accordion.css";
+
+/*---------------------------- UI Datapicker Input ---------------------------*/
+@import "ui/redmond/jquery.ui.theme.css";
+@import "ui/redmond/jquery.ui.datepicker.css";
+
+/*---------------------------- Light Box Show Img ----------------------------*/
+@import "lightbox/themes/default/jquery.lightbox.css";

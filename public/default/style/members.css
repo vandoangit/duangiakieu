@@ -1,0 +1,859 @@
+/*******************************************************************************
+
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+
+ ******************************************************************************/
+
+/*============================ Layout Member Login ===========================*/
+.layout_member_login{
+    border:1px solid #b8dce7;
+    background:#FFF;
+    box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+/*------------------------- Member Login Information -------------------------*/
+.layout_member_login .member_login_left{
+    float:left;
+    width:610px;
+    padding:10px 10px;
+    line-height:18px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+}
+
+/*----------------------------- Member Login Form ----------------------------*/
+.layout_member_login .member_login_right{
+    float:left;
+    width:300px;
+    border-left:1px solid #CCC;
+    border-right:1px solid #CCC;
+    background:url(../images/members/bg_layout_login.png) repeat center center;
+    padding:10px 20px 5px 20px;
+}
+
+.layout_member_login .member_login_right .layout_member_login_title{
+    padding:5px 0px 10px 0px;
+    line-height:26px;
+    text-transform:uppercase;
+    font-size:20px;
+    font-family:Arial,Tahoma,Verdana,sans-serif;
+    color:#666;
+}
+
+.layout_member_login .member_login_right .label_layout_message_login{
+    clear:both;
+    margin:0px 0px 10px 0px;
+    border:1px solid #F00;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    background:#ffeaea;
+    padding:5px 5px 5px 10px;
+    line-height:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#ff4700;
+    cursor:default;
+}
+
+.layout_member_login .member_login_right .label_layout_message_login .message_failed{
+    display:block;
+    background:url(../images/members/bg_error_login.png) no-repeat 0px 2px;
+    padding:0px 0px 0px 20px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color:#ff4700;
+}
+
+.layout_member_login .member_login_right fieldset{
+    display:block;
+    margin:0px 0px 10px 0px;
+    border:0px;
+    padding:0px;
+}
+
+.layout_member_login .member_login_right label.label_layout_member_login{
+    display:block;
+    margin:0px 0px 5px 0px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#666;
+}
+
+.layout_member_login .member_login_right input.input_layout_member_login{
+    width:92%;
+    height:18px;
+    border:1px solid #cfcfcf;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    box-shadow:1px 1px 4px 0 rgba(220, 220, 220, 1) inset;
+    padding:5px 10px;
+    line-height:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#333;
+}
+
+.layout_member_login .member_login_right .submit_layout_member_login{
+    float:left;
+    margin:0px 10px 0px 0px;
+    width:auto;
+    border:1px solid #339cdf;
+    background:#339cdf url(../images/members/bg_login_button.png) repeat-x top left;
+    padding:5px 8px 6px 8px;
+    text-shadow:0px -1px #278db8;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+}
+
+.layout_member_login .member_login_right .layout_member_login_line{
+    border-bottom:1px solid #CCC;
+    padding:10px 0px 0px 0px;
+    height:2px;
+    clear:both;
+}
+
+.layout_member_login .member_login_right .label_forgot_password{
+    margin:10px 0px 0px 0px;
+}
+
+.layout_member_login .member_login_right .label_forgot_password a{
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#1297b8;
+}
+
+.layout_member_login .member_login_right .label_register_member{
+    margin:5px 0px 5px 0px;
+}
+
+.layout_member_login .member_login_right .label_register_member a{
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#1297b8;
+}
+
+/*=============================== Member Login ===============================*/
+
+/*---------------------------- Membership Register ---------------------------*/
+.member_login a.label_member_register{
+    float:right;
+    padding:14px 5px 0px 0px;
+    text-transform:capitalize;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+.member_login a.label_membership_register{
+    float:right;
+    padding:14px 10px 0px 0px;
+    text-transform:capitalize;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#F00;
+}
+
+/*------------------------------- Login Button -------------------------------*/
+.member_login .button_member_login{
+    position:relative;
+    z-index:120;
+    float:right;
+    margin:6px 20px 0px 0px;
+    cursor:pointer;
+}
+
+.member_login .button_member_login > span > span{
+    display:block;
+    background:url(../images/members/toggle_down_member.png) no-repeat center right;
+    padding:8px 20px 6px 10px;
+    font-weight:bold;
+    font-size:12px;
+    color:#222;
+    cursor:pointer;
+}
+
+.member_login .button_member_login.active > span{
+    display:block;
+    border:1px solid #AAA;
+    border-bottom:0px;
+    background:#FFF;
+    padding-right:5px;
+}
+
+.member_login .button_member_login.active > span > span{
+    background:#FFF url(../images/members/toggle_up_member.png) no-repeat center right;
+}
+
+/*--------------------------------- Login Box --------------------------------*/
+.member_login .box_member_login{
+    display:none;
+    position:absolute;
+    z-index:110;
+    top:35px;
+    right:0px;
+    width:250px;
+    border:1px solid #AAA;
+    padding:10px 20px;
+    box-shadow:0px 1px 5px #ddd;
+    background:#FFF;
+}
+
+/*--------------------------------- Fieldset ---------------------------------*/
+.member_login .box_member_login fieldset{
+    display:block;
+    margin:0px 0px 15px 0px;
+    border:0px;
+    padding:0px;
+}
+
+/*----------------------------------- Label ----------------------------------*/
+.member_login .box_member_login label.label_member_login{
+    display:block;
+    margin:0px 0px 5px 0px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*----------------------------------- Input ----------------------------------*/
+.member_login .box_member_login input.input_member_login{
+    width:92%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:5px 10px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*---------------------------------- Message ---------------------------------*/
+.member_login .box_member_login .label_message_login{
+    clear:both;
+    padding:0px 0px 10px 0px;
+    line-height:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#F00;
+    cursor:default;
+}
+
+.member_login .box_member_login .label_message_login .message_failed{
+    display:block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color:#ff4700;
+}
+
+/*------------------------------- Button Login -------------------------------*/
+.member_login .box_member_login .submit_member_login{
+    float:left;
+    margin:0px 10px 0px 0px;
+    width:auto;
+    border:1px solid #339cdf;
+    background:#339cdf url(../images/members/bg_login_button.png) repeat-x top left;
+    padding:5px 8px 6px 8px;
+    text-shadow:0px -1px #278db8;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+}
+
+/*------------------------------ Forgot Password -----------------------------*/
+.member_login .box_member_login .label_forgot_password{
+    float:left;
+    margin:10px 0px 0px 0px;
+}
+
+.member_login .box_member_login .label_forgot_password a{
+    line-height:18px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*------------------------------ Register Member -----------------------------*/
+.member_login .box_member_login .label_register_member{
+    clear:both;
+    float:left;
+    margin:10px 0px 5px 0px;
+}
+
+.member_login .box_member_login .label_register_member a{
+    line-height:18px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*============================= Member Login Ajax ============================*/
+.member_login_ajax .box_member_login{
+
+}
+
+/*--------------------------------- Fieldset ---------------------------------*/
+.member_login_ajax .box_member_login fieldset{
+    display:block;
+    margin:0px 0px 10px 0px;
+    border:0px;
+    padding:0px;
+}
+
+/*----------------------------------- Label ----------------------------------*/
+.member_login_ajax .box_member_login label.label_member_login{
+    display:block;
+    margin:0px 0px 5px 0px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*----------------------------------- Input ----------------------------------*/
+.member_login_ajax .box_member_login input.input_member_login{
+    width:200px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:5px 10px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*---------------------------------- Message ---------------------------------*/
+.member_login_ajax .box_member_login .label_message_login{
+    clear:both;
+    padding:0px 0px 10px 5px;
+    line-height:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#F00;
+    cursor:default;
+}
+
+.member_login_ajax .box_member_login .label_message_login .message_failed{
+    display:block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    color:#ff4700;
+}
+
+/*------------------------------- Button Login -------------------------------*/
+.member_login_ajax .box_member_login .submit_member_login{
+    float:left;
+    margin:0px 0px 0px 0px;
+    width:auto;
+    border:1px solid #339cdf;
+    background:#339cdf url(../images/members/bg_login_button.png) repeat-x top left;
+    padding:5px 8px 6px 8px;
+    text-shadow:0px -1px #278db8;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+}
+
+/*------------------------------ Forgot Password -----------------------------*/
+.member_login_ajax .box_member_login .label_forgot_password{
+    clear:both;
+    float:left;
+    margin:10px 0px 0px 0px;
+}
+
+.member_login_ajax .box_member_login .label_forgot_password a{
+    line-height:18px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*------------------------------ Register Member -----------------------------*/
+.member_login_ajax .box_member_login .label_register_member{
+    clear:both;
+    float:left;
+    margin:5px 0px 5px 0px;
+}
+
+.member_login_ajax .box_member_login .label_register_member a{
+    line-height:18px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+/*=============================== Member Logged ==============================*/
+.member_login .member_logged li{
+    float:right;
+    padding:12px 0px 0px 0px;
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+    cursor:default;
+}
+
+.member_login .member_logged li.membership_card_facebook a{
+    padding-right:20px;
+    text-transform:capitalize;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#F00;
+}
+
+.member_login .member_logged li.welcome_member{
+    padding-right:5px;
+}
+
+.member_login .member_logged li.fullname_member{
+    display:inline-block;
+    margin-right:15px;
+    max-width:84px;
+    overflow:hidden;
+}
+
+.member_login .member_logged li.fullname_member a{
+    text-align:left;
+    white-space:nowrap;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#222;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.member_login .member_logged li.logout_member{
+    padding-right:20px;
+}
+
+.member_login .member_logged li.logout_member a{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#0000FF;
+    cursor:pointer;
+}
+
+/*============================ Member Logged Ajax ============================*/
+
+.member_login_ajax .box_member_logged .item_member_logged{
+    margin:0px 0px 8px 0px;
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+    cursor:default;
+}
+
+/*----------------------------------- Label ----------------------------------*/
+.member_login_ajax .box_member_logged label.label_member_logged{
+    float:left;
+    padding-right:5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+}
+
+/*---------------------------------- Content ---------------------------------*/
+.member_login_ajax .box_member_logged .welcome_member{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+    cursor:pointer;
+}
+
+.member_login_ajax .box_member_logged .update_member a{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#0000FF;
+    cursor:pointer;
+}
+
+.member_login_ajax .box_member_logged .order_member a{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#0000FF;
+    cursor:pointer;
+}
+
+.member_login_ajax .box_member_logged .logout_member a{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#0000FF;
+    cursor:pointer;
+}
+
+/*========================== Members Register Update =========================*/
+
+#middle_content .member_register,
+#middle_content .member_update{
+    width:inherit;
+}
+
+#middle_content .member_register .message_failed,
+#middle_content .member_update .message_failed{
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FF4700;
+}
+
+/*----------------------- Title Members Register Update ----------------------*/
+#middle_content .member_register .title_member_register,
+#middle_content .member_update .title_member_update{
+    margin:15px 10px 0px 10px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 10px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#333333;
+}
+
+/*---------------------- Content Members Register Update ---------------------*/
+#middle_content .member_register .content_member_register,
+#middle_content .member_update .content_member_update{
+    margin:15px 10px 0px 10px;
+}
+
+#middle_content .member_register .content_member_register ul,
+#middle_content .member_update .content_member_update ul{
+
+}
+
+#middle_content .member_register .content_member_register ul li,
+#middle_content .member_update .content_member_update ul li{
+    line-height:35px;
+    overflow:hidden;
+}
+
+#middle_content .member_register .content_member_register ul li .label_content_register,
+#middle_content .member_update .content_member_update ul li .label_content_update{
+    float:left;
+    width:120px;
+    padding-right:10px;
+    line-height:35px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#middle_content .member_register .content_member_register ul li .input_text_register,
+#middle_content .member_update .content_member_update ul li .input_text_update{
+    margin-right:10px;
+    width:320px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#middle_content .member_register .content_member_register ul li.member_register_captcha .input_text_register,
+#middle_content .member_update .content_member_update ul li.member_update_captcha .input_text_update{
+    margin-right:10px;
+    width:200px;
+    padding:3px 10px;
+}
+
+#middle_content .member_register .content_member_register ul li .input_text_register_browser,
+#middle_content .member_update .content_member_update ul li .input_text_update_browser{
+    width:260px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#middle_content .member_register .content_member_register ul li .input_button_browser,
+#middle_content .member_update .content_member_update ul li .input_button_browser{
+    margin:0px 5px 0px 5px;
+    border:1px solid #9F9F9F;
+    background:#666666;
+    padding:3px 5px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#middle_content .member_register .content_member_register ul li .select_text_register,
+#middle_content .member_update .content_member_update ul li .select_text_update{
+    margin-right:10px;
+    width:300px;
+    height:20px;
+}
+
+/*---------------------- Button Members Register Update ----------------------*/
+#middle_content .member_register .button_member_register,
+#middle_content .member_update .button_member_update{
+    padding-bottom:15px;
+    overflow:hidden;
+}
+
+#middle_content .member_register .button_member_register .body_button_member_register,
+#middle_content .member_update .button_member_update .body_button_member_update{
+    margin:10px 0px 10px 200px;
+    width:225px;
+    overflow:hidden;
+}
+
+#middle_content .member_register .button_member_register .button,
+#middle_content .member_update .button_member_update .button{
+    float:left;
+    margin:0px 10px;
+    width:85px;
+    border:1px solid #0DA4C9;
+    background-color:#24BDE2;
+    padding:5px 2px 4px 2px;
+    text-align:center;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#middle_content .member_register .button_member_register .button:hover,
+#middle_content .member_update .button_member_update .button:hover{
+    border:1px solid #F44D15;
+    background-color:#FF6734;
+    color:#FFFFFF;
+}
+
+/*======================= Members Register Update Ajax =======================*/
+#member_ajax{
+    position:fixed;
+    z-index:999;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    background:url(../images/members/bg_loading.png);
+    line-height:100%;
+}
+
+#member_ajax .member_register,
+#member_ajax .member_update{
+    margin:20px auto 0px auto;
+    width:750px;
+    background:#f4f4ee;
+    padding:5px 5px;
+    text-align:left;
+    overflow:hidden;
+}
+
+#member_ajax .member_register .body_member_register,
+#member_ajax .member_update .body_member_update{
+    border:1px solid #DDDDDD;
+    background-color:#ffffff;
+    overflow:hidden;
+}
+
+#member_ajax .member_register .message_failed,
+#member_ajax .member_update .message_failed{
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FF4700;
+}
+
+/*---------------------- Caption Members Register Update ---------------------*/
+#member_ajax .member_register .caption_member_register,
+#member_ajax .member_update .caption_member_update{
+    position:relative;
+    height:28px;
+    border-bottom:1px solid #DDDDDD;
+    background-color:#24BDE2;
+    line-height:25px;
+    overflow:hidden;
+}
+
+#member_ajax .member_register .caption_member_register h4,
+#member_ajax .member_update .caption_member_update h4{
+    padding-left:10px;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+
+#member_ajax .member_register .close_member_ajax,
+#member_ajax .member_update .close_member_ajax{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:17px;
+    height:17px;
+    background:url(../images/members/close.png) no-repeat left top;
+    cursor:pointer;
+}
+
+/*----------------------- Title Members Register Update ----------------------*/
+#member_ajax .member_register .title_member_register,
+#member_ajax .member_update .title_member_update{
+    margin:15px 10px 0px 10px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 10px 0px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#333333;
+}
+
+/*---------------------- Content Members Register Update ---------------------*/
+#member_ajax .member_register .content_member_register,
+#member_ajax .member_update .content_member_update{
+    margin:10px 10px 0px 10px;
+}
+
+#member_ajax .member_register .content_member_register ul,
+#member_ajax .member_update .content_member_update ul{
+}
+
+#member_ajax .member_register .content_member_register ul li,
+#member_ajax .member_update .content_member_update ul li{
+    line-height:30px;
+    overflow:hidden;
+}
+
+#member_ajax .member_register .content_member_register ul li .label_content_register,
+#member_ajax .member_update .content_member_update ul li .label_content_update{
+    float:left;
+    width:120px;
+    padding-right:10px;
+    line-height:30px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#member_ajax .member_register .content_member_register ul li .input_text_register,
+#member_ajax .member_update .content_member_update ul li .input_text_update{
+    margin-right:10px;
+    width:320px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:0px 5px 0px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#member_ajax .member_register .content_member_register ul li.member_register_captcha .input_text_register,
+#member_ajax .member_update .content_member_update ul li.member_update_captcha .input_text_update{
+    margin-right:10px;
+    width:200px;
+    padding:3px 10px;
+}
+
+#member_ajax .member_register .content_member_register ul li .input_text_register_browser,
+#member_ajax .member_update .content_member_update ul li .input_text_update_browser{
+    width:260px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:0px 5px 0px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#member_ajax .member_register .content_member_register ul li .input_button_browser,
+#member_ajax .member_update .content_member_update ul li .input_button_browser{
+    margin:0px 5px 0px 5px;
+    border:1px solid #9F9F9F;
+    background:#666666;
+    padding:3px 5px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#member_ajax .member_register .content_member_register ul li .select_text_register,
+#member_ajax .member_update .content_member_update ul li .select_text_update{
+    margin-right:10px;
+    width:300px;
+    height:20px;
+}
+
+/*---------------------- Button Members Register Update ----------------------*/
+#member_ajax .member_register .button_member_register,
+#member_ajax .member_update .button_member_update{
+    padding-bottom:10px;
+    overflow:hidden;
+}
+
+#member_ajax .member_register .button_member_register .body_button_member_register,
+#member_ajax .member_update .button_member_update .body_button_member_update{
+    margin:10px auto 10px auto;
+    width:225px;
+    overflow:hidden;
+}
+
+#member_ajax .member_register .button_member_register .button,
+#member_ajax .member_update .button_member_update .button{
+    float:left;
+    margin:0px 10px;
+    width:85px;
+    border:1px solid #0DA4C9;
+    background-color:#24BDE2;
+    padding:5px 2px 4px 2px;
+    text-align:center;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#member_ajax .member_register .button_member_register .button:hover,
+#member_ajax .member_update .button_member_update .button:hover{
+    border:1px solid #F44D15;
+    background-color:#FF6734;
+    color:#FFFFFF;
+}

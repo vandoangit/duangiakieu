@@ -1,0 +1,103 @@
+/*******************************************************************************
+
+    Ghi chú:hoàn thành ngày 28-07-2015
+    Copyright :Hồ Minh Trí
+
+*******************************************************************************/
+
+.theme_custom.slider-wrapper{
+    position:relative;
+    background-color:#3f9cfb;
+    padding:5px 5px 8px 5px;
+    overflow:hidden;
+}
+
+.theme_custom.slider-wrapper .slider_main{
+    background-color:#1187ff;
+    padding:5px 6px 5px 6px;
+}
+
+/*================================= Image Part ===============================*/
+.theme_custom .nivoSlider{
+    position:relative;
+    width:100%;
+    height:auto;
+    background:#FFFFFF url(loading.gif) no-repeat 50% 50%;
+}
+
+/*------------------------------------- Img ----------------------------------*/
+.theme_custom .nivoSlider img{
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.theme_custom .nivoSlider a{
+    display:block;
+    border:0px;
+}
+
+/*----------------------------------- Caption --------------------------------*/
+.theme_custom .nivo-caption{
+    font-size:16px;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    color:#0d0d0d;
+}
+
+.theme_custom .nivo-caption a{
+    color:#0d0d0d;
+}
+
+.theme_custom .nivo-caption a:hover{ 
+    color:#0d0d0d;
+}
+
+/*------------------------ Direction Nav (Next & Prev) -----------------------*/
+.theme_custom .nivo-directionNav a{
+    display:block;
+    width:30px;
+    height:35px;
+    border:0px;
+    font-size:0px;
+}
+
+.theme_custom a.nivo-nextNav{
+    right:-9px;
+    background:url(arrows_right.png) no-repeat; 
+}
+
+.theme_custom a.nivo-prevNav{
+    left:-9px;
+    background:url(arrows_left.png) no-repeat; 
+}
+
+/*================================ Control Part ==============================*/
+/*--------------------------- Control Nav (1,2,3...) -------------------------*/
+.theme_custom .nivo-controlNav{
+    position:absolute;
+    z-index:15;
+    right:100px;
+    bottom:0px;
+    height:22px;
+    padding:5px 0px 9px 20px;
+}
+
+.theme_custom .nivo-controlNav a{
+    float:left;
+    display:block;
+    width:30px;
+    height:25px;
+    border:0px;
+    line-height:25px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#a6dffd;
+}
+
+.theme_custom .nivo-controlNav a.active{
+    background:url(bullets_active.png) no-repeat;
+    color:#FFF;
+}

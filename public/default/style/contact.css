@@ -1,0 +1,153 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+#contact{
+    padding:0px 10px 0px 10px;
+    clear:left;
+    cursor:default;
+    overflow:hidden;
+}
+
+#contact .message_failed{
+    padding-left:5px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FF4700;
+}
+
+#contact .message_successful{
+    padding-left:5px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#00F;
+}
+
+/*============================== Article Contact =============================*/
+
+#contact .contact_article{
+    margin:0px 0px 30px 0px;
+    cursor:default;
+    overflow:hidden;
+}
+
+/*------------------------------- Title Article ------------------------------*/
+#contact .contact_article .contact_article_title{
+    padding:0px 10px 15px 0px;
+    line-height:20px;
+    font-size:17px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#176a87;
+    cursor:default;
+}
+
+/*------------------------------ Content Article -----------------------------*/
+#contact .contact_article .contact_article_content{
+    line-height:20px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    cursor:default;
+}
+
+/*============================= Send Mail Contact ============================*/
+#contact .contact_send{
+    width:700px;
+}
+
+#contact .contact_send ul li{
+    cursor:default;
+    overflow:hidden;
+}
+
+/*--------------------------------- Fieldset ---------------------------------*/
+#contact .contact_send fieldset{
+    margin:0px 10px 10px 10px;
+    border:1px solid #CCC;
+    padding:10px 10px;
+    cursor:default;
+}
+
+#contact .contact_send fieldset legend{
+    margin-left:15px;
+    padding:0xp 3px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    cursor:default;
+}
+
+/*----------------------------------- Label ----------------------------------*/
+#contact .contact_send li .label_contact{
+    float:left;
+    width:120px;
+    height:30px;
+    padding:0px 10px 0px 0px;
+    line-height:30px;
+    text-align:right;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    cursor:default;
+}
+
+/*----------------------------------- Input ----------------------------------*/
+#contact .contact_send li .input_text_contact{
+    margin:5px 0px;
+    height:20px;
+    width:320px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*--------------------------------- Textarea ---------------------------------*/
+#contact .contact_send li .textarea_contact{
+    width:320px;
+    height:100px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*---------------------------------- Captcha ---------------------------------*/
+#contact .contact_send li.contact_captcha{
+    padding:10px 0px;
+}
+
+#contact .contact_send li.contact_captcha input{
+    margin-right:10px;
+    width:120px;
+    padding:3px 10px;
+}
+
+/*---------------------------------- Send Me ---------------------------------*/
+#contact .contact_send li.contact_send_me{
+    padding:10px 0px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*---------------------------------- Button ----------------------------------*/
+#contact .contact_send li a.button_contact{
+    display:block;
+    padding:3px 10px 5px 2px;
+    width:67px;
+    border:0px;
+    background:url(../images/button_contact.png) no-repeat center center;
+    text-align:center;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-style:italic;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+    overflow:hidden;
+}

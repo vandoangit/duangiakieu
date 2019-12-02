@@ -1,0 +1,126 @@
+<config>
+    <!--
+        author:hien thi trong phan playlist,ten tac gia video
+        date:chua biet
+        description:hien thi trong phan playlist,mo ta video
+        duration:thoi gian cua video tinh bang giay
+        file:url file video
+        image:hinh anh cho file video
+        link:lien ket den trang web khac khi nhan vao ten video,hien thi trog phan playlist
+        start:thoi gian bat dau cho playlist
+        streamer:chua biet
+        tags:tu khoa tim kiem cho clip
+        title:ten clip
+        type:loai clip cho phep chay gom cac gia tri:
+                        sound:for MP3 sounds
+                        image:for JPG, PNG, GIF images
+                        video:for FLV and MP4 videos
+                        youtube:for Youtube videos
+                        http:for HTTP streaming videos
+                        rtmp:for RTMP streaming videos
+                        lighttpd:for video from a Lighttpd webserver
+                        bitgravity:for content from the Bitgravity CDN
+                        highwinds:for content from the Highwinds CDN
+                        edgecast:for HTTP streaming MP4 from the EdgeCast CDN
+                        fcsubscribe:for live streams from the Limelight CDN
+                        flvseek:for HTTP streaming FLV from the Limelight CDN
+    -->
+    
+    
+    
+    
+    <!--
+        backcolor           :mau nen cho thanh toolbar va playlist.Mac dinh la mau trang
+        frontcolor          :mau cua tat ca cac icon,text trong thanh toolbar va playlis,neu khong co lightcolor thi khi re chuot vao no se la mau cua re chuot
+        lightcolor          :mau cua video dang phat va khi re chuot
+        screencolor         :mau nen cho video o tren
+    -->
+    
+    <backcolor>#999999</backcolor>
+    <frontcolor>#000000</frontcolor>
+    <lightcolor>#00FF00</lightcolor>
+    <screencolor>#333333</screencolor>
+    
+    <!--
+        dock                :(true)
+                                true(1)         :
+                                false(0)        :
+        icon                :hien thi hay khong hien thi button play o giua man hinh va thanh toolbar(true)//chua
+                                true(1)         :hien thi
+                                false(0)        :khong hien thi
+        controlbar          :cai dat thanh toolbar co cac vi tri nhu:(bottom)
+                                over            :khi dua chuot vao clip thi no se hien len,khi clip chua chay cung se hien
+                                bottom          :hien thi o cuoi video
+                                none            :khong hien thi                        
+        playlist.position   :vi tri cua list video gom cac gia tri
+                                bottom          :vi tri bottom
+                                over            :
+                                rigth           :ben phai
+                                none            :khong hien thi
+        playlistsize        :chieu cao neu o vi tri bottom chieu rong voi vi tri ben phai cua list
+        playlist.thumbs     :hien thi hinh anh trong playlist hay khong(true)
+                                true(1)         :hien thi hinh anh
+                                false(0)        :khong hien thi hinh anh
+        skin                :giao dien jwplayer
+        width               :chieu rong cua man hinh(280)
+        height              :chieu cao cua man hinh(400) 
+    -->
+    <controlbar>bottom</controlbar>
+    <playlist.position>bottom</playlist.position>
+    <playlistsize>100</playlistsize>
+    <playlist.thumbs>false</playlist.thumbs>
+    
+    <!--
+        resizing            :
+        state               :
+        displayclick        :khi click vao video se lam gi.Co cac gia tri sao //chua
+                                play            :ngung hoac chay video
+                                link            :nhan vao se chuyen den trang web khac
+                                fullscreen      :full sen man hinh
+                                none            :khong lam gi ca
+                                
+        autostart           :tu dong play video khi loaded(false)
+                                true(1)         :se tu dong chay
+                                false(0)        :khong tu dong chay
+        bufferlength        :sau khi load xong n giay thi video moi duoc play:n la so giay duoc cai dac(1s)
+        fullscreen          :co hien thi button ful sen khong(false)
+                                true(1)         :cho phep fullscreen
+                                false(0)        :khong cho phep fullscreen
+        item                :item se play khi load(0)
+        linktarget          :che do mo khi link.Co cac gia tri sau(_blank).Khi nao co lien ket
+                                _blank          :mo trang web khac
+                                _self           :khong mo
+        logo                :logo se hien thi o phan tren cung cua trang web(location)
+        mute                :ngat tien cho video(false)
+                                true(1)         :cam
+                                false(0)        :khong cam
+        repeat              :lap lai video.Gom ac gia tri sau(none)
+                                list            :lap lai toan bo clip 1 lan duy nhat
+                                always          :lap lai toan bo clip nhieu lan 
+                                none            :khong lap
+        shuffle             :chay ngau nhien 1 video trong list(0)
+                                true(1)         :chay ngau nhien
+                                false(0)        :khong chay ngau nhien
+        smoothing           :lam min cac video(true)
+                                true(1)         :thuc hien lam min
+                                false(0)        :khong lam min
+        stretching          :dieu chinh hinh anh background.Gom cac gia tri(uniform)
+                                none            :mac dinh khong chinh sua
+                                exactfit        :chinh xac theo khung video
+                                uniform         :thong nhat,hinh anh khong bi meo va lang ra khoi video khi chieu dai hoac chieu rong dai hon kich thuoc mac dinh
+                                fill            :lap lai va lap day khoang trong
+        volume              :dieu chinh volume mac dinh(90)
+    -->
+    
+    <autostart>false</autostart>
+    <bufferlength>0</bufferlength>
+    <fullscreen>true</fullscreen>
+    <item>0</item>
+    <mute>0</mute>
+    <repeat>list</repeat>
+    <shuffle>0</shuffle>
+    <smoothing>1</smoothing>
+    <stretching>uniform</stretching>
+    <volume>100</volume>
+    
+</config>

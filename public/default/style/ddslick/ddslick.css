@@ -1,0 +1,136 @@
+/*================================ View Select ===============================*/
+.dd-select{
+    position:relative;
+    width:260px;
+    border-color:#ddd #eee #ddd #ddd;
+    border-style:solid;
+    border-width:1px;
+    border-radius:2px 0px 0px 2px;
+    background:#FFF;
+    cursor:pointer;
+}
+
+.dd-select:hover{
+    background:#eee !important;
+}
+
+.dd-desc{
+    display:block;
+    line-height:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size:12px;
+    color:#222;
+    overflow:hidden;
+}
+
+.dd-selected{
+    display:block;
+    padding:5px 10px;
+    line-height:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:12px;
+    color:#222;
+    overflow:hidden;
+}
+
+.dd-pointer{
+    position:absolute;
+    top:50%;
+    right:5px;
+    margin-top:-2px;
+    width:0px;
+    height:0px;
+}
+
+.dd-pointer-down{
+    border:solid 4px transparent;
+    border-top:solid 4px #000;
+}
+
+.dd-pointer-up{
+    margin-top:-8px;
+    border:solid 4px transparent !important;
+    border-bottom:solid 4px #000 !important;
+}
+
+/*============================== Options Select ==============================*/
+.dd-options{
+    list-style:none;
+    position:absolute;
+    z-index:103;
+    display:none;
+    margin:0px;
+    width:815px !important;
+    border:solid 1px #ddd;
+    border-top:none;
+    box-shadow:0px 1px 5px #ddd;
+    background:#fff;
+    padding:0px 0px 10px 5px;
+    overflow:auto;
+}
+
+.dd-options li{
+    float:left;
+    width:130px;
+    padding:5px 5px 0px 0px;
+}
+
+.dd-option{
+    display:block;
+    padding:5px 6px;
+    text-decoration:none;
+    line-height:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:12px;
+    color:#2F3567;
+    cursor:pointer;
+    overflow:hidden;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+}
+
+.dd-options > li:last-child > .dd-option{
+    border-bottom:none;
+}
+
+.dd-option:hover{
+    background:#f9f9f9;
+    color:#EA4C1E;
+}
+
+.dd-selected-description-truncated{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.dd-option-selected{
+    background:#f9f9f9;
+    color:#EA4C1E;
+}
+
+.dd-option-image,
+.dd-selected-image{
+    float:left;
+    margin-right:3px;
+    max-width:50px;
+    vertical-align:middle;
+}
+
+.dd-image-right{
+    float:right;
+    margin-right:10px;
+    margin-left:3px;
+}
+
+.dd-container{
+    position:relative;
+}
+
+.dd-selected-text{
+    font-weight:bold;
+}

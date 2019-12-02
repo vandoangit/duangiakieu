@@ -1,0 +1,38 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 27-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*=============================== Main Marquee ===============================*/        
+.simply-scroll-container{ 
+    position:relative;
+}
+
+.simply-scroll{ 
+    overflow:hidden;
+}
+
+/*=============================== Body Marquee ===============================*/ 
+.simply-scroll-clip{ 
+    position:relative;
+    z-index:2;
+    width:193px;
+    height:260px;
+    overflow:hidden;
+}
+
+/*=============================== Body Marquee ===============================*/ 
+.simply-scroll-list{ 
+    position:absolute;
+    z-index:1;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+}
+
+/*=============================== Item Marquee ===============================*/
+ul.simply-scroll-list li{
+    overflow:hidden;
+}

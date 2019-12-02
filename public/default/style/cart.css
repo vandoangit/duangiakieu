@@ -1,0 +1,578 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*=================================== Cart ===================================*/
+
+/*............................... Table Product ..............................*/
+
+.cart_order .cart_order_product table,
+.cart_shopping .cart_shopping_product table{
+    width:100%;
+    border:1px solid #D2D1D1; /* Thay doi border table */
+    border-collapse:collapse;
+}
+
+/*-------------------------------- Table Title -------------------------------*/
+.cart_order .cart_order_product table tr th,
+.cart_shopping .cart_shopping_product table tr th{
+    border-right:1px solid #D2D1D1; /* Thay doi border table */
+    background:url(../images/cart/bg_cart_title.png) repeat-x left center; /* Thay doi background title */
+    padding:5px 5px;
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#626060;
+    cursor:default;
+}
+
+/*------------------------------- Table Content ------------------------------*/
+.cart_order .cart_order_product table tr td,
+.cart_shopping .cart_shopping_product table tr td{
+    border-right:1px #D2D1D1 dotted; /* Thay doi border table */
+    border-bottom:1px #D2D1D1 solid; /* Thay doi border table */
+    padding:5px 8px;
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    cursor:default;
+}
+
+.cart_order .cart_order_product sup,
+.cart_shopping .cart_shopping_product sup{
+	text-transform:lowercase;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.cart_order .cart_order_product ul li,
+.cart_shopping .cart_shopping_product ul li{
+    padding:4px 0px;
+    line-height:18px;
+    overflow:hidden;
+    clear:both;
+}
+
+.cart_order .cart_order_product ul li .label_cart_order,
+.cart_shopping .cart_shopping_product ul li .label_cart_shopping{
+    text-align:left;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#000000;
+    cursor:default;
+}
+
+/*------------------------------- Product Name -------------------------------*/
+.cart_order .cart_order_product .product_name,
+.cart_shopping .cart_shopping_product .product_name{
+    padding-bottom:8px;
+    line-height:18px;
+}
+
+.cart_order .cart_order_product .product_name a,
+.cart_shopping .cart_shopping_product .product_name a{
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;
+}
+
+/*------------------------------- Product Price ------------------------------*/
+.cart_order .cart_order_product ul li.product_price span,
+.cart_shopping .cart_shopping_product ul li.product_price span{
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#F00;
+}
+
+/*----------------------------- Product Quantity -----------------------------*/
+.cart_order .cart_order_product .ajax_update_quantity_input,
+.cart_shopping .cart_shopping_product .ajax_update_quantity_input{
+    background:url("../images/cart/edit_cart.png") no-repeat right center;
+}
+
+.cart_order .cart_order_product .ajax_update_quantity,
+.cart_shopping .cart_shopping_product .ajax_update_quantity{
+    width:90%;
+    height:20px;
+    text-align:center;
+}
+
+/*------------------------------- Cart Subtotal ------------------------------*/
+.cart_order .cart_order_product .cart_order_subtotal,
+.cart_shopping .cart_shopping_product .cart_shopping_subtotal{
+    font-weight:bold;
+    font-family:Arial,Tahoma,Verdana;
+	font-size:14px;
+    color:#F00;
+}
+
+/*--------------------------------- Cart Total -------------------------------*/
+.cart_order .cart_order_product .cart_order_total,
+.cart_shopping .cart_shopping_product .cart_shopping_total{
+    background:#e3f1f7; /* Thay doi background Total */
+    padding:8px 15px 8px 0px;
+    text-align:right;
+    font-size:16px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#F00;
+}
+
+/*--------------------------------- Cart Empty -------------------------------*/
+.cart_order .cart_order_product .cart_order_empty,
+.cart_shopping .cart_shopping_product .cart_shopping_empty{
+    padding:15px 0px 15px 0px;
+    text-align:center;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#F00;
+}
+
+/*---------------------------- Button Delete Cart ----------------------------*/
+.cart_order .cart_order_product .ajax_delete_cart,
+.cart_shopping .cart_shopping_product .ajax_delete_cart{
+    display:block;
+    width:46px;
+    height:20px;
+    background:url(../images/cart/delete_cart.png) no-repeat left center;
+    padding-left:25px;
+    line-height:21px;
+    text-align:left;
+    font-size:11px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FFF;
+    cursor:pointer;
+}
+
+/*............................... Form Contact ...............................*/
+
+.cart_order .cart_order_contact ul li,
+.cart_method .cart_method_contact ul li{
+    padding:3px 0px;
+    cursor:default;
+    overflow:hidden;
+}
+
+.cart_order .cart_order_contact .message_failed,
+.cart_method .cart_method_contact .message_failed{
+    display:block;
+    padding:5px 0px 0px 150px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:normal;
+    color:#FF4700;
+}
+
+.cart_order .cart_order_contact .message_successful,
+.cart_method .cart_method_contact .message_successful{
+    display:block;
+    padding:5px 0px 0px 150px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#00F;
+}
+
+/*--------------------------------- Fieldset ---------------------------------*/
+.cart_order .cart_order_contact fieldset,
+.cart_method .cart_method_contact fieldset{
+    margin:0px 10px 10px 10px;
+    border:1px solid #CCC;
+    padding:10px;
+    cursor:default;
+}
+
+.cart_order .cart_order_contact fieldset legend,
+.cart_method .cart_method_contact fieldset legend{
+    margin-left:15px;
+    padding:0px 3px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    cursor:default;
+}
+
+/*----------------------------------- Label ----------------------------------*/
+.cart_order .cart_order_contact li .label_cart_order,
+.cart_method .cart_method_contact li .label_cart_method{
+    float:left;
+    width:140px;
+    height:30px;
+    padding:0px 10px 0px 0px;
+    line-height:30px;
+    text-align:right;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    cursor:default;
+}
+
+.cart_method .cart_method_contact li .div_info_cart_confirm{
+    padding:5px 0px 0px 10px;
+    line-height:20px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    cursor:default;
+}
+
+/*----------------------------------- Input ----------------------------------*/
+.cart_order .cart_order_contact li .input_text_cart_order,
+.cart_method .cart_method_contact li .input_text_cart_method{
+    margin:3px 0px;
+    height:20px;
+    width:320px;
+    padding:2px 5px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*--------------------------------- Textarea ---------------------------------*/
+.cart_order .cart_order_contact li .textarea_cart_order,
+.cart_method .cart_method_contact li .textarea_cart_method{
+    width:320px;
+    height:100px;
+    padding:2px 5px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*---------------------------------- Captcha ---------------------------------*/
+.cart_order .cart_order_contact li.cart_order_captcha,
+.cart_method .cart_method_contact li.cart_method_captcha{
+    padding:10px 0px;
+}
+
+.cart_order .cart_order_contact li.cart_order_captcha input,
+.cart_method .cart_method_contact li.cart_method_captcha input{
+    margin-right:10px;
+    width:120px;
+    padding:3px 10px;
+}
+
+/*---------------------------------- Send Me ---------------------------------*/
+.cart_order .cart_order_contact li.cart_order_send_me,
+.cart_method .cart_method_contact li.cart_method_send_me{
+    padding:10px 0px;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+}
+
+/*---------------------------------- Button ----------------------------------*/
+.cart_order .cart_order_contact li a.button_cart_order{
+    display:block;
+    padding:3px 10px 5px 2px;
+    width:67px;
+    border:0px;
+    background:url(../images/cart/cart_order/button_cart_order.png) no-repeat left center;
+    text-align:center;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-style:italic;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+/*================================ Cart Order ================================*/
+
+.cart_order{
+    padding:0px 10px 10px 10px;
+    clear:both;
+}
+
+.cart_order .cart_order_title{
+    margin:0px 0px 10px 0px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 5px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;  //Thay đổi màu chữ
+    cursor:default;
+    clear:both;
+}
+
+/*............................... Order Product ..............................*/
+
+.cart_order .cart_order_product{
+    padding:0px 0px 20px 0px;
+}
+
+/*............................... Order Contact ..............................*/
+
+.cart_order .cart_order_contact{
+}
+
+/*=============================== Cart Shopping ==============================*/
+
+.cart_shopping,
+.cart_method{
+    background:#FFF;
+    padding:15px 10px 10px 10px;
+    clear:both;
+}
+
+/*............................... Shopping Step ..............................*/
+
+.cart_shopping .cart_shopping_step,
+.cart_method .cart_method_step{
+    margin-bottom:5px;
+    background:url(../images/cart/cart_shopping/bg_cart_shopping_step.png) no-repeat right center;
+    padding:1px 0px;
+    overflow:hidden;
+}
+
+/*------------------------------ Item Cart Step ------------------------------*/
+.cart_shopping .cart_shopping_step .item_step,
+.cart_method .cart_method_step .item_step{
+    position:relative;
+    float:left;
+    margin-left:-14px;
+    height:33px;
+    background:url(../images/cart/cart_shopping/bg_item_cart_shopping_step.png) no-repeat right center;
+    padding:0px 25px 0px 20px;
+    line-height:33px;
+    overflow:hidden;
+}
+
+.cart_shopping .cart_shopping_step .item_step a,
+.cart_method .cart_method_step .item_step a{
+    white-space:nowrap;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#EC6666;
+    cursor:pointer;
+}
+
+/*--------------------------- Item Cart Step Active --------------------------*/
+.cart_shopping .cart_shopping_step .item_step.active,
+.cart_shopping .cart_shopping_step .item_step:hover,
+.cart_method .cart_method_step .item_step.active,
+.cart_method .cart_method_step .item_step:hover{
+    background:#b4e2fa url(../images/cart/cart_shopping/bg_item_cart_shopping_step_active.png) no-repeat right center;
+}
+
+/*---------------------------- Item Cart Step Home ---------------------------*/
+.cart_shopping .cart_shopping_step .item_step.home,
+.cart_method .cart_method_step .item_step.home{
+    margin-left:0px;
+    padding:0px 0px 0px 0px;
+}
+
+.cart_shopping .cart_shopping_step .item_step.home.active,
+.cart_shopping .cart_shopping_step .item_step.home:hover,
+.cart_method .cart_method_step .item_step.home.active,
+.cart_method .cart_method_step .item_step.home:hover{
+    background:inherit;
+}
+
+.cart_shopping .cart_shopping_step .item_step.home a,
+.cart_method .cart_method_step .item_step.home a{
+    display:block;
+    width:55px;
+    height:33px;
+    background:url(../images/cart/cart_shopping/bg_item_cart_shopping_home.png) no-repeat left center;
+}
+
+/*............................. Shopping Product .............................*/
+
+.cart_shopping .cart_shopping_product{
+    margin:0px 0px 20px 0px;
+}
+
+/*.............................. Shopping Action .............................*/
+
+.cart_shopping .cart_shopping_action,
+.cart_method .cart_method_action{
+    padding:0px 0px 20px 0px; 
+    overflow:hidden;
+}
+
+/*-------------------------=------ Action Prev -------------------------------*/
+.cart_shopping .cart_shopping_action .cart_shopping_action_prev,
+.cart_method .cart_method_action .cart_method_action_prev{
+    float:left;
+    background:url(../images/cart/cart_shopping/cart_shopping_prev.png) no-repeat left center; 
+    overflow:hidden;
+}
+
+.cart_shopping .cart_shopping_action .cart_shopping_action_prev a,
+.cart_method .cart_method_action .cart_method_action_prev a{
+    display:block;
+    width:85px;
+    height:24px;
+    padding-left:25px;
+    line-height:24px;
+    text-align:left;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FFF;
+    cursor:pointer;
+}
+
+/*-------------------------------- Action Next -------------------------------*/
+.cart_shopping .cart_shopping_action .cart_shopping_action_next,
+.cart_method .cart_method_action .cart_method_action_next{
+    float:right;
+    background:url(../images/cart/cart_shopping/cart_shopping_next.png) no-repeat left center;
+    overflow:hidden;
+}
+
+.cart_shopping .cart_shopping_action .cart_shopping_action_next a,
+.cart_method .cart_method_action .cart_method_action_next a{
+    display:block;
+    width:85px;
+    height:24px;
+    padding-left:25px;
+    line-height:24px;
+    text-align:left;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FFF;
+    cursor:pointer;
+}
+
+/*================================ Cart Method ===============================*/
+
+.cart_method .cart_method_body{
+    margin:10px 0px 20px 0px;
+    overflow:hidden;
+}
+
+.cart_method .cart_method_body .cart_method_title{
+    margin:0px 0px 10px 0px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 5px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;
+    cursor:default;
+    clear:both;
+}
+
+/*.............................. Method Contact ..............................*/
+
+.cart_method .cart_method_contact{
+    padding:0px 0px 20px 0px;
+}
+
+/*......................... Method Delivery & Payment ........................*/
+
+.cart_method .cart_method_delivery{
+    padding:0px 0px 20px 0px;
+}
+
+.cart_method .cart_method_delivery table,
+.cart_method .cart_method_payment table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+/*----------------------------------- Title ----------------------------------*/
+.cart_method .cart_method_delivery table th,
+.cart_method .cart_method_payment table th{
+    padding:5px 10px;
+    font-size:13px;
+    text-align:left;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:normal;
+    color:#00F;
+    cursor:default;
+}
+
+/*---------------------------------- Content ---------------------------------*/
+.cart_method .cart_method_delivery table td,
+.cart_method .cart_method_payment table td{
+    padding:5px 8px;
+    line-height:20px;
+    font-size:13px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    color:#000;
+}
+
+.cart_method .cart_method_delivery table td .delivery_name,
+.cart_method .cart_method_payment table td .payment_name{
+    font-weight:bold;
+    color:#000;
+    padding-bottom:5px;
+}
+
+.cart_method .cart_method_delivery table td .delivery_content,
+.cart_method .cart_method_payment table td .payment_content{
+    color:#333;
+}
+
+.cart_method .cart_method_delivery table td .delivery_cost,
+.cart_method .cart_method_payment table td .payment_cost{
+    color:#F00;
+}
+
+/*=============================== Cart Confirm ===============================*/
+
+div.cart_confirm{
+    background:#FFF;
+    padding:15px 10px 10px 10px;
+    clear:both;
+}
+
+/*............................ Confirm Information ...........................*/
+
+div.cart_confirm .cart_confirm_information{
+    margin:15px 0px 0px 0px;
+    overflow:hidden;
+}
+
+div.cart_confirm  .cart_confirm_information .cart_confirm_title{
+    margin:0px 0px 10px 0px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 5px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#0066FF;
+    cursor:default;
+    clear:both;
+}
+
+div.cart_confirm .cart_confirm_message{
+	padding:10px 0px 5px 10px;
+	font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#F00;
+    cursor:default;
+    clear:both;
+}
+/*================================ Cart Finish ===============================*/
+
+div.cart_finish{
+    padding:10px 10px 0px 10px;
+    clear:both;
+}
+
+div.cart_finish .cart_finish_body{
+    padding:0px 0px 10px 20px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#F00;
+}

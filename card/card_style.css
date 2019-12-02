@@ -1,0 +1,214 @@
+/*******************************************************************************
+
+ Ghi chú:hoàn thành ngày 29-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+
+/*=========================== Card Message Default ===========================*/
+.card-message{
+    position:relative;
+}
+
+/*------------------------------ Content Message -----------------------------*/
+.card-message .card-response-output{
+    -moz-border-radius:5px 5px 5px 5px;
+    -webkit-border-radius:5px 5px 5px 5px;
+    border-radius:5px 5px 5px 5px;
+    padding:10px 20px 10px 34px;
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#000;
+}
+
+/*------------------------ Content Message Information -----------------------*/
+.card-message .card-response-output.card-notification-information{
+    background:#7DBBFB url(./images/icon_information.png) no-repeat 10px center;
+    color:#FFF;
+}
+
+/*-------------------------- Content Message Success -------------------------*/
+.card-message .card-response-output.card-notification-success{
+    background:#80E08B url("images/icon_successfull.png") no-repeat 10px center;
+    color:#FFF;
+}
+
+/*--------------------------- Content Message Error --------------------------*/
+.card-message .card-response-output.card-notification-error{
+    background:#F18C8C url(./images/icon_error.png) no-repeat 10px center;
+    color:#FFF;
+}
+
+/*------------------------------- Close Message ------------------------------*/
+.card-message .card-response-output .card-notification-close-icon{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:7px;
+    height:7px;
+    background:url("images/icon_close.png") no-repeat scroll 0px 0px;
+    color:#333;
+    cursor:pointer;
+}
+
+/*================================= Card Form ================================*/
+.facebook_themeform{
+    width:inherit;
+}
+
+.facebook_themeform .message_successful{
+    padding-left:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#00F;
+}
+
+.facebook_themeform .message_failed{
+    padding-left:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FF4700;
+}
+
+/*--------------------------- Title Facebook Theme ---------------------------*/
+.facebook_themeform .title_facebook_themeform{
+    margin:15px 10px 0px 10px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 10px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#333333;
+}
+
+/*-------------------------- Content Facebook Theme --------------------------*/
+.facebook_themeform .content_facebook_themeform{
+    margin:15px 10px 0px 10px;
+}
+
+.facebook_themeform .content_facebook_themeform ul{
+
+}
+
+.facebook_themeform .content_facebook_themeform ul li{
+    line-height:35px;
+    overflow:hidden;
+}
+
+.facebook_themeform .content_facebook_themeform ul li.membership_register,
+.facebook_themeform .content_facebook_themeform ul li.membership_register_card{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#333;
+}
+
+.facebook_themeform .content_facebook_themeform ul li.membership_register a,
+.facebook_themeform .content_facebook_themeform ul li.membership_register_card a{
+    color:#F00;
+}
+
+.facebook_themeform .content_facebook_themeform ul li .label_facebook_themeform{
+    float:left;
+    width:120px;
+    padding-right:10px;
+    line-height:35px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+.facebook_themeform .content_facebook_themeform ul li .input_text_facebook_themeform{
+    margin-right:10px;
+    width:320px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+.facebook_themeform .content_facebook_themeform ul li .select_text_facebook_themeform{
+    margin-right:10px;
+    width:330px;
+    height:26px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+/*=========================== Card Directory Photo ===========================*/
+
+.directory_photo{
+    position:relative;
+}
+
+.card_directory_photo{
+    float:left;
+    width:100%;
+    padding:15px 0px 0px 0px;
+}
+
+.card_directory_photo .directory_indent{
+    margin:6px 0px 0px 0px;
+    width:648px;
+    height:450px;
+    border:0px;
+}
+
+.card_directory_photo_active{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:635px;
+    padding:20px 0px 0px 5px;
+}
+
+/*------------------------- Item Card Directory Photo ------------------------*/
+.card_directory_photo ul li{
+    float:left;
+    margin:5px 5px;
+    width:150px;
+    border:1px solid #CCC;
+    text-align:center;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+/*---------------------- Card Directory Photo Directory ----------------------*/
+.card_directory_photo ul li .directory_folder{
+    display:block;
+    height:28px;
+    background:url(images/folder_images.png) no-repeat 0px 0px;
+    padding:90px 1px 1px 1px;
+    text-align:center;
+    line-height:18px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#084BB3;
+    cursor:pointer;
+}
+
+/*------------------------- Card Directory Photo Img -------------------------*/
+.card_directory_photo ul li img{
+    padding:1px 1px 1px 1px;
+    height:115px;
+    cursor:pointer;
+}
+
+/*----------------------------- Card Photo Active ----------------------------*/
+.card_directory_photo_active img{
+    border:1px solid #CCC;
+    width:100%;
+    cursor:default;
+}

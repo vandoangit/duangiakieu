@@ -1,0 +1,179 @@
+/*******************************************************************************
+
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+
+ ******************************************************************************/
+
+/*======================== Membership Register Update ========================*/
+
+#middle_content .membership_register,
+#middle_content .membership_update,
+#middle_content .membership_card{
+    width:inherit;
+}
+
+#middle_content .membership_register .message_successful,
+#middle_content .membership_update .message_successful,
+#middle_content .membership_card .message_successful{
+    padding-left:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#00F;
+}
+
+#middle_content .membership_register .message_failed,
+#middle_content .membership_update .message_failed,
+#middle_content .membership_card .message_failed{
+    padding-left:20px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FF4700;
+}
+
+/*----------------------- Title Members Register Update ----------------------*/
+#middle_content .membership_register .title_membership_register,
+#middle_content .membership_update .title_membership_update,
+#middle_content .membership_card .title_membership_card{
+    margin:15px 10px 0px 10px;
+    border-bottom:1px solid #DDDDDD;
+    padding:0px 0px 10px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#333333;
+}
+
+/*---------------------- Content Members Register Update ---------------------*/
+#middle_content .membership_register .content_membership_register,
+#middle_content .membership_update .content_membership_update,
+#middle_content .membership_card .content_membership_card{
+    margin:15px 10px 0px 10px;
+}
+
+#middle_content .membership_register .content_membership_register ul,
+#middle_content .membership_update .content_membership_update ul,
+#middle_content .membership_card .content_membership_card ul{
+
+}
+
+#middle_content .membership_register .content_membership_register ul li,
+#middle_content .membership_update .content_membership_update ul li,
+#middle_content .membership_card .content_membership_card ul li{
+    line-height:35px;
+    overflow:hidden;
+}
+
+#middle_content .membership_register .content_membership_register ul li .label_content_register,
+#middle_content .membership_update .content_membership_update ul li .label_content_update,
+#middle_content .membership_card .content_membership_card ul li .label_content_card,
+#middle_content ul li .label_content_district{
+    float:left;
+    width:120px;
+    padding-right:10px;
+    line-height:35px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#middle_content .membership_register .content_membership_register ul li .input_text_register,
+#middle_content .membership_update .content_membership_update ul li .input_text_update,
+#middle_content .membership_card .content_membership_card ul li .input_text_card{
+    margin-right:10px;
+    width:320px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#middle_content .membership_register .content_membership_register ul li.membership_register_captcha .input_text_register,
+#middle_content .membership_update .content_membership_update ul li.membership_update_captcha .input_text_update,
+#middle_content .membership_card .content_membership_card ul li.membership_card_captcha .input_text_card{
+    margin-right:10px;
+    width:200px;
+    padding:3px 10px;
+}
+
+#middle_content .membership_register .content_membership_register ul li .input_text_register_browser,
+#middle_content .membership_update .content_membership_update ul li .input_text_update_browser,
+#middle_content .membership_card .content_membership_card ul li .input_text_card_browser{
+    width:260px;
+    height:20px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+#middle_content .membership_register .content_membership_register ul li .input_button_browser,
+#middle_content .membership_update .content_membership_update ul li .input_button_browser,
+#middle_content .membership_card .content_membership_card ul li .input_button_browser{
+    margin:0px 5px 0px 5px;
+    border:1px solid #9F9F9F;
+    background:#666666;
+    padding:3px 5px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#middle_content .membership_register .content_membership_register ul li .select_text_register,
+#middle_content .membership_update .content_membership_update ul li .select_text_update,
+#middle_content .membership_card .content_membership_card ul li .select_text_card,
+#middle_content ul li .select_text_district{
+    margin-right:10px;
+    width:330px;
+    height:26px;
+    border:1px solid #DDDDDD;
+    padding:2px 5px 2px 5px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+
+/*---------------------- Button Members Register Update ----------------------*/
+#middle_content .membership_register .button_membership_register,
+#middle_content .membership_update .button_membership_update{
+    padding-bottom:15px;
+    overflow:hidden;
+}
+
+#middle_content .membership_register .button_membership_register .body_button_membership_register,
+#middle_content .membership_update .button_membership_update .body_button_membership_update{
+    margin:10px 0px 10px 200px;
+    width:225px;
+    overflow:hidden;
+}
+
+#middle_content .membership_register .button_membership_register .button,
+#middle_content .membership_update .button_membership_update .button{
+    float:left;
+    margin:0px 10px;
+    width:85px;
+    border:1px solid #0DA4C9;
+    background-color:#24BDE2;
+    padding:5px 2px 4px 2px;
+    text-align:center;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#middle_content .membership_register .button_membership_register .button:hover,
+#middle_content .membership_update .button_membership_update .button:hover{
+    border:1px solid #F44D15;
+    background-color:#FF6734;
+    color:#FFFFFF;
+}

@@ -1,0 +1,432 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*============================ List Category Home ============================*/
+#module_product_home .list_category_home{
+    overflow:hidden;
+}
+
+/*---------------------------- Body Item Category ----------------------------*/
+#module_product_home .list_category_home .ul_list_category_home li{
+    float:left;
+    margin:10px 5px;
+}
+
+/*---------------------------- Image Item Category ---------------------------*/
+#module_product_home .list_category_home .ul_list_category_home li a{
+    float:left;
+    border:0px;
+}
+
+#module_product_home .list_category_home .ul_list_category_home li img{
+    width:90px;
+}
+
+/*============================= List Product Home ============================*/
+
+#module_product_home .list_product_home{
+
+}
+
+/*----------------------------- Body Item Product ----------------------------*/
+#module_product_home .list_product_home .item_product{
+    border-bottom:1px solid #CCC;
+    padding:8px 5px 10px 5px;
+    overflow:hidden;
+}
+
+#module_product_home .list_product_home .item_product:hover{
+
+}
+
+/*---------------------------- Image Item Product ----------------------------*/
+#module_product_home .list_product_home .item_product .item_product_image{
+    float:left;
+    border:0px;
+}
+
+#module_product_home .list_product_home .item_product .item_product_image img{
+    float:left;
+    margin:0px 5px 5px 0px;
+    width:90px;
+    border:1px solid #CCC;
+    padding:1px 1px;
+}
+
+/*----------------------------- Name Item Product ----------------------------*/
+#module_product_home .list_product_home .item_product .item_product_name{
+    margin:0px 0px 5px 0px;
+}
+
+#module_product_home .list_product_home .item_product .item_product_name a{
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#333;
+    cursor:default;
+}
+
+/*------------------------- Description Item Product -------------------------*/
+#module_product_home .list_product_home .item_product .item_product_description{
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#333;
+    cursor:default;
+}
+
+/*---------------------------- Price Item Product ----------------------------*/
+#module_product_home .list_product_home .item_product .item_product_price{
+    float:right;
+    width:150px;
+    padding:10px 10px 0px 0px;
+    text-align:right;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#F00;
+    cursor:default;
+}
+
+/*--------------------------- Location Item Product --------------------------*/
+#module_product_home .list_product_home .item_product .item_product_location{
+    float:left;
+    width:120px;
+    padding:10px 0px 0px 10px;
+    text-align:left;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#333;
+    cursor:default;
+}
+
+/*=============================== List Product ===============================*/
+
+#middle_content .list_product{
+    overflow:hidden;
+}
+
+/*----------------------------- Body Item Product ----------------------------*/
+#middle_content .list_product .item_product{
+    float:left;
+    margin:10px 10px;
+    width:219px;
+	/*
+    border:1px solid #CCC;
+    background:#FFF;
+	*/
+    text-align:center;
+    overflow:hidden;
+}
+
+#middle_content .list_product .item_product:hover{
+	border:1px solid #fea73a;
+}
+
+/*---------------------------- Image Item Product ----------------------------*/
+#middle_content .list_product .item_product .bg_item_product_image{
+	background:url(../images/modules/module_product/bg_item_product.png) no-repeat bottom center;
+	padding:0px 0px 18px 0px;
+}
+
+#middle_content .list_product .item_product .item_product_image{
+	/*
+    margin-top:10px;
+	*/
+    height:230px;
+    overflow:hidden;
+}
+
+#middle_content .list_product .item_product .item_product_image img{
+    margin:auto;
+    width:219px;
+}
+
+/*----------------------------- Name Item Product ----------------------------*/
+#middle_content .list_product .item_product .item_product_name{
+    height:30px;
+    padding:0px 5px 10px 5px;
+    line-height:18px;
+    overflow:hidden;
+}
+
+#middle_content .list_product .item_product .item_product_name a{
+    text-align:center;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#176a87;
+}
+
+#middle_content .list_product .item_product:hover .item_product_name a{
+	color:#fea73a;
+}
+
+/*---------------------------- Price Item Product ----------------------------*/
+#middle_content .list_product .item_product .item_product_price{
+    margin:5px 0px 5px 0px;
+    font-size:14px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#F00;
+    cursor:default;
+    overflow:hidden;
+}
+
+#middle_content .list_product .item_product .item_product_price .item_product_price_new{
+    float:left;
+    width:40%;
+    color:#F00;
+}
+
+#middle_content .list_product .item_product .item_product_price .item_product_price_percent{
+    float:left;
+    width:20%;
+    font-weight:bold;
+    color:#474747;
+}
+
+#middle_content .list_product .item_product .item_product_price .item_product_price_old{
+    float:right;
+    width:40%;
+    color:#474747;
+    text-decoration:line-through;
+}
+
+#middle_content .list_product .item_product .item_product_price sup{
+	text-transform:lowercase;
+	font-size:12px;
+	font-weight:bold;
+}
+
+/*============================== Detail Product ==============================*/
+
+#detail_product{
+    float:left;
+    width:719px;
+    overflow-y:hidden;
+}
+
+/**************************** Detail Product Image ****************************/
+
+#detail_product .detail_product_image{
+    float:left;
+    width:270px;
+    padding:10px 15px;
+}
+
+/*------------------------------- Display Image ------------------------------*/
+#detail_product .detail_product_image img.display_image{
+    margin:0px auto;
+    width:270px;
+    border:1px solid #CCC;
+}
+
+/*------------------------------ Thumbnail Image -----------------------------*/
+#detail_product .detail_product_image ul.thumbnail_image{
+    display:block;
+    overflow:hidden;
+    clear:both;
+}
+
+#detail_product .detail_product_image ul.thumbnail_image li{
+    float:left;
+    margin:10px 0px 0px 10px;
+}
+
+#detail_product .detail_product_image ul.thumbnail_image li.first{
+    margin-left:0px;
+}
+
+#detail_product .detail_product_image ul.thumbnail_image li a{
+    display:block;
+	padding:2px 2px;
+    border:2px solid #CCC;
+}
+
+#detail_product .detail_product_image ul.thumbnail_image li a.zoomThumbActive{
+    border:2px solid #fea73a;
+}
+
+#detail_product .detail_product_image ul.thumbnail_image li img{
+    max-width:53px;
+    height:50px;
+    padding:1px;
+}
+
+/***************************** Detail Product Info ****************************/
+
+#detail_product  .detail_product_info{
+    float:left;
+    width:409px;
+    padding:10px 0px 10px 10px;
+}
+
+#detail_product  .detail_product_info ul li{
+    padding:0px 0px 5px 0px;
+    line-height:18px;
+    list-style:none;
+    overflow:hidden;
+}
+
+#detail_product .detail_product_info li.line_through{
+	margin-top:10px;
+	padding-bottom:5px;
+    border-top:1px dotted #CCC;
+	line-height:18px;
+}
+
+#detail_product  .detail_product_info ul li .label_product_detail{
+    text-align:left;
+    text-transform:capitalize;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#000000;
+    cursor:default;
+}
+
+#detail_product  .detail_product_info ul li span{
+    text-align:left;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000000;
+    cursor:default;
+}
+
+/*------------------------------- Product Name -------------------------------*/
+#detail_product .detail_product_info h3.product_name{
+    line-height:20px;
+    text-transform:capitalize;
+    font-size:20px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#176a87;
+    cursor:default;
+}
+
+/*--------------------------------- Page View --------------------------------*/
+#detail_product .detail_product_info .page_views{
+    float:right;
+    line-height:15px;
+    white-space:nowrap;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-style:italic;
+    color:#666;
+}
+
+/*----------------------------- Product Quantity -----------------------------*/
+#detail_product .detail_product_info .product_quantity{
+	display:none;
+    padding-bottom:10px;
+	font-weight:bold;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#FF0000;
+    cursor:default;
+}
+
+/*-------------------------------- Product ID --------------------------------*/
+#detail_product .detail_product_info li.product_id{
+}
+
+#detail_product .detail_product_info li.product_id span{
+    text-transform:uppercase;
+}
+
+/*----------------------------- Product Category -----------------------------*/
+#detail_product .detail_product_info li.product_category{
+	display:none;
+}
+
+#detail_product .detail_product_info li.product_category span{
+    text-transform:capitalize;
+}
+
+/*----------------------------- Product Price Old ----------------------------*/
+#detail_product .detail_product_info li.product_price_old{
+	text-decoration:line-through;
+}
+
+#detail_product .detail_product_info li.product_price_old span{
+	font-size:16px;
+}
+
+#detail_product .detail_product_info li.product_price_old sup{
+	text-transform:lowercase;
+	font-size:12px;
+	font-weight:bold;
+}
+
+/*----------------------------- Product Price New ----------------------------*/
+#detail_product .detail_product_info li.product_price_new{
+    padding:5px 0px 10px 20px;
+	line-height:40px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:40px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#F00;
+    cursor:default;
+}
+
+#detail_product .detail_product_info li.product_price_new sup{
+	text-transform:lowercase;
+	font-size:16px;
+	font-weight:bold;
+}
+
+/*----------------------------- Product Headline -----------------------------*/
+#detail_product .detail_product_info .product_headline{
+    padding-top:10px;
+    line-height:20px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000;
+}
+
+#detail_product  .detail_product_info .product_headline ul li{
+    padding:inherit;
+    line-height:20px;
+    list-style:disc;
+}
+
+/*-------------------------------- Product Cart ------------------------------*/
+#detail_product .detail_product_info .product_add_cart{
+    margin:25px 0px 10px 50px;
+    width:100px;
+    height:30px;
+    background:url(../images/cart/add_cart.png) no-repeat top left;
+    padding-left:40px;
+    line-height:30px;
+    font-size:14px;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+/*************************** Detail Product Content ***************************/
+#detail_product .detail_product_content{
+    line-height:20px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000;
+    clear:both;
+    overflow:hidden;
+    cursor:default;
+}
+
+/*------------------------------ Product Content -----------------------------*/
+#detail_product .detail_product_content .product_content{
+    padding:15px 10px 0px 10px;
+    line-height:20px;
+    text-align:left;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#000;
+}

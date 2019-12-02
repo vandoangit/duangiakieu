@@ -1,0 +1,117 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 27-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+.zoomPad{
+    float:left;
+    position:relative;
+    z-index:49;
+    cursor:crosshair;
+}
+
+.zoomPreload{
+    position:absolute;
+    z-index:60;
+    top:0px;
+    left:0px;
+    width:90px;
+    height:35px;
+    border:1px solid #CCC;
+    background:#FFFFFF url(./zoomloader.gif) no-repeat 43px 20px;
+    -moz-opacity:0.8;
+    opacity:0.8;
+    padding:2px 8px;
+    text-align:center;
+    text-decoration:none;
+    font-size:12px;
+    font-family:Tahoma;
+    color:#333;  
+}
+
+.zoomPup{
+    position:absolute;
+    z-index:70;
+    border:1px solid #CCC;
+    background-color:#FFF;
+    -moz-opacity:0.6;
+    opacity:0.6;
+    cursor:crosshair;
+    overflow:hidden;
+}
+
+.zoomOverlay{
+    display:none;
+    position:absolute;
+    z-index:51;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:#FFF;
+    /*opacity:0.5;*/
+}
+
+.zoomWindow{
+    position:absolute;
+    z-index:60;
+    left:110%;
+    top:40px;
+    height:auto;
+    background:#FFF;
+}
+
+.zoomWrapper{
+    position:relative;
+    z-index:60;
+    border:1px solid #999;
+}
+
+.zoomWrapperTitle{
+    display:block;
+    position:absolute;
+    z-index:70;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:18px;
+    background:#999;
+    -moz-opacity:0.6;
+    opacity:0.6;
+    line-height:18px;
+    text-align:center;
+    font-size:10px;
+    color:#FFF;
+    overflow:hidden;
+}
+
+.zoomWrapperImage{
+    display:block;
+    position:relative;
+    z-index:60;
+    overflow:hidden;
+
+}
+
+.zoomWrapperImage img{
+    display:block;
+    position:absolute;
+    z-index:51;
+    border:0px;
+}
+
+.zoomIframe{
+    display:block;
+    position:absolute;
+    z-index:-1;
+    filter:alpha(opacity=0);
+    -moz-opacity:0.80;
+    opacity:0.80;
+}
+
+/*********************************************************
+/ When clicking on thumbs jqzoom will add the class
+/ "zoomThumbActive" on the anchor selected
+/*********************************************************/

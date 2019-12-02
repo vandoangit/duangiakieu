@@ -1,0 +1,254 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*=========================== Background Menu Part ===========================*/
+
+/*---------------------------- Background Content ----------------------------*/
+.content_ddsmoothmenu{
+    margin:0px auto;
+    width:760px;
+	/*
+    background:url(./images/bg_menu.png) repeat-x left top;
+	*/
+}
+
+/*------------------------------ Background Left -----------------------------*/
+.content_ddsmoothmenu .left_ddsmoothmenu{
+	/*
+    background:url(./images/bg_menu_lt.png) no-repeat left top;
+	*/
+}
+
+/*------------------------------ Background Right ----------------------------*/
+.content_ddsmoothmenu .right_ddsmoothmenu{
+	/*
+    background:url(./images/bg_menu_tr.png) no-repeat top right;
+	*/
+    height:20px;                                                                /* Menu Height */        
+}
+
+/*============================ Level One Menu Part ===========================*/
+* html .ddsmoothmenu{
+    height:1%;
+}
+
+/*---------------------------------- Body Menu -------------------------------*/
+.ddsmoothmenu ul{
+    margin:0px;
+    padding:0px 5px;                                                            /* Border Img Left Right Width */        
+    z-index:100;
+    list-style:none;
+}
+
+/*-------------------------------- Menu Item Li ------------------------------*/
+.ddsmoothmenu ul li{
+    position:relative;
+    float:right;
+	/*
+    background:url(./images/boder_menu_header.png) no-repeat left top;
+	*/
+    border-right:1px solid #FFF;                                                /* Border Item Li */
+}
+
+.ddsmoothmenu ul li.first_ddsmoothmenu{
+	/*
+    background:none;
+	*/
+    border-right:0px;                                                           /* Border Item Li */
+
+}
+
+/*------------------------------- Menu Item  A -------------------------------*/
+.ddsmoothmenu ul li a{
+    display:block;
+    height:20px;                                                                /* Menu Height */
+    padding:0px 18px 0px 18px;                                                  /* Padding Left Right Tag A */
+    line-height:20px;
+    text-align:center;
+    text-transform:capitalize;
+    text-decoration:none;
+    white-space:nowrap;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFF;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_0 a{
+    background:url(./images/icon/icon_0.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_1 a{
+    background:url(./images/icon/icon_1.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_2 a{
+    background:url(./images/icon/icon_2.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_3 a{
+    background:url(./images/icon/icon_3.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_4 a{
+    background:url(./images/icon/icon_4.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_5 a{
+    background:url(./images/icon/icon_5.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_6 a{
+    background:url(./images/icon/icon_6.png) no-repeat center 8px;
+}
+
+* html .ddsmoothmenu ul li a{
+    display:inline-block;
+}
+
+/*---------------------------- Menu Item A Hover -----------------------------*/
+.ddsmoothmenu ul li a:hover,
+.ddsmoothmenu ul li a.active{
+    color:#fc9e32;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_0 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_0 a:active{
+    background:#31d7ff url(./images/icon/icon_0_hover.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_1 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_1 a:active{
+    background:#31d7ff url(./images/icon/icon_1_hover.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_2 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_2 a:active{
+    background:#31d7ff url(./images/icon/icon_2_hover.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_3 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_3 a:active{
+    background:#31d7ff url(./images/icon/icon_3_hover.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_4 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_4 a:active{
+    background:#31d7ff url(./images/icon/icon_4_hover.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_5 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_5 a:active{
+    background:#31d7ff url(./images/icon/icon_5_hover.png) no-repeat center 8px;
+}
+
+.ddsmoothmenu ul li.icon_menu_header_6 a:hover,
+.ddsmoothmenu ul li.icon_menu_header_6 a:active{
+    background:#31d7ff url(./images/icon/icon_6_hover.png) no-repeat center 8px;
+}
+
+/*-------------------------------- Down Arrow  -------------------------------*/
+.downarrowclass{
+    display:none !important;
+    position:absolute;
+    top:50%;
+    right:5px;
+    margin:-4px 0px 0px 0px;
+}
+
+/*============================ Level Two Menu Part ===========================*/
+
+/*---------------------------------- Body Menu -------------------------------*/
+.ddsmoothmenu ul li ul{
+    display:none;
+    visibility:hidden;
+    position:absolute;
+    left:0px;
+    margin:0px;
+	background:url(./images/bg_sub_menu.jpg) repeat-y left top;
+	/*
+    background:#141414;                                                         /* Background Menu Sub */
+    padding:0px;
+    list-style:none;
+}
+
+.ddsmoothmenu ul li ul li ul{
+    top:0px;
+}
+
+.ddsmoothmenu ul li ul li ul li{
+}
+
+/*-------------------------------- Menu Item Li ------------------------------*/
+.ddsmoothmenu ul li ul li{
+    position:relative;
+    display:list-item;
+    float:none;
+    border-left:2px solid #000;
+    border-bottom:2px solid #000;
+    border-top-width:0px;
+    border-right-width:0px;
+    background:none;
+    padding-left:0px;
+}
+
+.ddsmoothmenu ul li ul li:hover{
+    background:#a6e063;
+}
+/*----------------------------- Menu Item  A  --------------------------------*/
+.ddsmoothmenu ul li ul li a{
+    display:block;
+    margin:0px;
+    height:auto;
+    width:200px;                                                                /*width of sub menus*/
+    background:none !important;
+    padding:8px 20px 8px 10px;
+    line-height:18px;
+    text-align:left;
+    text-transform:none;
+    text-decoration:none;
+    white-space:normal;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#fc9e32;
+}
+
+.ddsmoothmenu ul li ul li a:hover{
+    background:none;
+    color:#ff0000;
+}
+
+/*------------------------------- Right Arrow  -------------------------------*/
+.rightarrowclass{
+    position:absolute;
+    top:50%;
+    right:5px;
+    margin-top:-4px;
+}
+
+
+
+
+
+
+
+
+
+/* ######### CSS for shadow added to sub menus  ######### */
+.ddshadow{ /*shadow for NON CSS3 capable browsers*/
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:0px;
+    height:0px;
+    background:silver;
+}
+
+.toplevelshadow{ /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+    opacity:0.8;
+}

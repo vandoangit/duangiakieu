@@ -1,0 +1,73 @@
+/*
+ * jQuery UI Tabs 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs{
+    position:relative;
+    border:0px !important;
+    padding:0px;
+}
+
+.ui-tabs .ui-tabs-nav{
+    margin:0px;
+    border:0px;
+    background:none;
+    padding:0px 0px 0px 5px;
+}
+
+.ui-tabs .ui-tabs-nav li{
+    float:left;
+    position:relative;
+    top:1px;
+    margin:0px 1px 2px 1px;
+    border:1px solid #097bee;
+    border-bottom:0px !important;
+    background:#097bee;
+    padding:0px;
+    list-style:none;
+}
+
+.ui-tabs .ui-tabs-nav li a{
+    float:left;
+    padding:5px 10px;
+    text-decoration:none;
+    font-size:12px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FFF;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+    margin-bottom:0px;
+    padding-bottom:1px;
+    background:#FFF;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-state-processing a{
+    cursor:default;
+    color:#e17009;
+}
+
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a{
+    cursor:pointer;
+} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+
+.ui-tabs .ui-tabs-panel{
+    display:block;
+    margin:0px;
+    padding:0px;
+    border-top:2px solid #0873df;
+    background:none;
+}
+
+.ui-tabs .ui-tabs-hide{
+    display:none !important;
+}

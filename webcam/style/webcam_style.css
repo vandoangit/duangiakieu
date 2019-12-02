@@ -1,0 +1,40 @@
+/*******************************************************************************
+
+ Ghi chú:hoàn thành ngày 25-09-2014
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+
+/*============================== Webcam Facebook =============================*/
+
+#webcam_facebook{
+    margin:10px 0px 0px 0px;
+    overflow:hidden;
+    clear:both;
+}
+
+#webcam_facebook .webcam_facebook_video{
+    float:left;
+    width:480px;
+    height:400px;
+}
+
+#webcam_facebook .webcam_facebook_image{
+    float:left;
+    margin:0px 0px 0px 14px;
+    width:480px;
+    height:400px;
+}
+
+#webcam_facebook .webcam_facebook_image img{
+    width:480px;
+}
+
+#webcam_facebook .webcam_facebook_image .countdown_snapshot_image{
+    line-height:400px;
+    text-align:center;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#0FF;
+}

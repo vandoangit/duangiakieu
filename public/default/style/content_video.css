@@ -1,0 +1,97 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 28-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*================================ List Video ================================*/
+#body_content .list_video{
+    overflow:hidden;
+}
+
+/*------------------------------ Body Item Video -----------------------------*/
+#body_content .list_video .item_video{
+    float:left;
+    margin:0px 10px 10px 0px;
+    height:140px;
+    width:349px;
+    background:url(../images/modules/module_video/bg_list_video.png) no-repeat scroll left top;
+    overflow:hidden;
+}
+
+/*--------------------------------- Video Img --------------------------------*/
+#body_content .list_video .item_video .item_video_image{
+    float:left;
+    margin:7px 0px 0px 6px;
+	width:142px;
+    height:120px;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+#body_content .list_video .item_video .item_video_image img{
+    float:left;
+	height:120px;
+}
+
+/*-------------------------------- Title Video -------------------------------*/
+#body_content .list_video .item_video .item_video_name{
+	float:right;
+    margin:10px 0px 8px 0px;
+	width:175px;
+}
+
+#body_content .list_video .item_video .item_video_name a{
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#00F;
+    cursor:pointer;
+}
+
+/*----------------------------- Description Video ----------------------------*/
+#body_content .list_video .item_video .item_video_description{
+	float:right;
+    margin-bottom:10px;
+	width:160px;
+    height:50px;
+    line-height:18px;
+    text-align:justify;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    color:#333;
+    overflow:hidden;
+}
+
+/*-------------------------------- Video Date --------------------------------*/
+#body_content .list_video .item_video .item_video_date{
+	float:right;
+	width:170px;
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#333;
+}
+
+#body_content .list_video .item_video .item_video_date label{
+    padding-right:5px;
+}
+
+/*=============================== Video Detail ===============================*/
+#body_content .detail_video{
+    padding:0px 10px 0px 10px;
+    text-align:center;
+    overflow:hidden;
+}
+
+#body_content .title_video_involved{
+    padding:10px 0px 15px 20px;
+    line-height:18px;
+    font-size:13px;
+    font-family:Arial,Tahoma,Verdana;
+    font-weight:bold;
+    color:#FF0000;
+}

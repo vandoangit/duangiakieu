@@ -1,0 +1,587 @@
+/******************************************************************************
+
+	Ghi chú:hoàn thành ngày 23-10-2011
+	Copyright :Hồ Minh Trí
+	
+*******************************************************************************/
+ 
+.dataTables_scroll{
+    clear:both;
+}
+
+.dataTables_scrollBody{
+    -webkit-overflow-scrolling:touch;
+}
+
+.top,.bottom{
+    padding:15px;
+    background-color:#F5F5F5;
+    border:1px solid #CCCCCC;
+}
+
+.clear{
+    clear:both;
+}       
+/*=========================== Dinh Dang Toan Table ===========================*/
+.dataTables_wrapper{
+    position:relative;
+    clear:both;
+}
+
+.dataTables_processing{
+    position:absolute;
+    top:60px;
+    left:50%;
+    width:250px;
+    margin-left:-125px;
+    border:1px solid #ddd;
+    text-align:center;
+    color:#999;
+    font-size:11px;
+    padding:2px 0px;
+}
+
+/*========================== Dinh Dang Phan Toolbar ==========================*/        
+.dataTables_wrapper .ui-toolbar{
+    padding:5px;
+    border:0px !important;
+    display:block;
+}
+
+div.dataTables_wrapper .ui-widget-header{
+    font-weight:normal;
+}
+
+/*======================= Dinh Dang Phan Filter Search =======================*/
+
+/*------------------------------- Show Page ----------------------------------*/
+.dataTables_length{
+    width:40%;
+    font-size:12px;
+    font-weight:bold;
+    float:left;
+}
+
+.dataTables_length select{
+    width:45px;
+    text-align:center;
+}
+
+/*------------------------------- Show Search --------------------------------*/
+.dataTables_filter{
+    width:50%;
+    font-size:12px;
+    font-weight:bold;
+    float:right;
+    text-align:right;
+}
+
+.dataTables_filter input{
+    width:150px;
+}
+
+/*========================= Dinh Dang Phan Phan Trang ========================*/
+
+/*---------------------------- Thong Tin Trang -------------------------------*/
+.dataTables_info{
+    padding-top:3px;
+}
+
+.dataTables_info{
+    width:50%;
+    float:left;
+}
+
+.example_alt_pagination div.dataTables_info{
+    width:40%;
+}
+
+.top .dataTables_info{
+    float:none;
+}
+
+/*------------------------------ Phan Trang ----------------------------------*/
+.dataTables_paginate{
+    float:right;
+    text-align:right;
+    width:auto;
+}
+
+.dataTables_paginate .ui-button{
+    margin-right:1px !important;
+}
+
+/* Phan Trang Next Previous */
+.paging_two_button .ui-button{
+    float:left;
+    cursor:pointer;
+}
+
+.paginate_disabled_previous,
+.paginate_enabled_previous,
+.paginate_disabled_next,
+.paginate_enabled_next {
+    height:19px;
+    width:19px;
+    margin-left:3px;
+    float:left;
+}
+
+.paginate_disabled_previous{
+    background-image:url('images/back_disabled.jpg');
+}
+
+.paginate_enabled_previous{
+    background-image:url('images/back_enabled.jpg');
+}
+
+.paginate_disabled_next{
+    background-image:url('images/forward_disabled.jpg');
+}
+
+.paginate_enabled_next{
+    background-image:url('images/forward_enabled.jpg');
+}
+
+/* Phan Trang List Number */
+.paging_full_numbers{
+    width:350px !important;
+}
+
+.paging_full_numbers .ui-button{
+    padding:2px 6px;
+    margin:0px;
+    cursor:pointer;
+    color:#333333 !important;
+}
+
+.paging_full_numbers a.paginate_button{
+    background-color:#ddd;
+}
+
+.paging_full_numbers a.paginate_button:hover{
+    background-color:#ccc;
+    text-decoration:none !important;
+}
+
+.paging_full_numbers a.paginate_active{
+    background-color:#99B3FF;
+}
+
+.paging_full_numbers a.paginate_button,
+.paging_full_numbers a.paginate_active{
+    border:1px solid #aaa;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    padding:2px 5px;
+    margin:0px 3px;
+    cursor:pointer;
+    color:#333333 !important;
+}
+
+/*=========================== Dinh Dang Phan Table ===========================*/
+table.content_admin_body_table{
+    margin:0px auto;
+    clear:both;
+    width:100%;
+    border-right:1px #C5DBEC solid;
+    border-left:1px #C5DBEC solid;
+    border-collapse:collapse;
+}
+
+table.content_admin_body_table div{
+    cursor:default;
+}
+
+/*---------------------------------Du Lieu Rong ------------------------------*/
+.dataTables_empty{
+    text-align:center;
+    font-size:13px !important;
+    color:#F00;
+    padding:10px 0px !important;
+}
+
+/*======================= Dinh Dang Phan Tieu De Table =======================*/
+
+/*--------------------------------- Tieu De ----------------------------------*/
+table.content_admin_body_table thead th{
+    padding:10px 0px 8px 10px;
+    cursor:pointer;
+    font-size:11px;
+}
+
+table.content_admin_body_table thead th.right{
+    text-align:right;
+}
+
+/*--------------------------------- Icon Sort --------------------------------*/
+table.content_admin_body_table thead th div.DataTables_sort_wrapper{
+    position:relative;
+    padding-right:16px;
+}
+
+table.content_admin_body_table thead th div.DataTables_sort_wrapper span{
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    right:1px;
+}
+
+/*------------------------------- Footer Table -------------------------------*/
+table.content_admin_body_table tfoot th{
+    padding:10px 0px 8px 10px;
+    cursor:default;
+    font-size:11px;
+    font-weight:bold;
+}
+
+table.content_admin_body_table tfoot input{
+    margin:10px 0px;
+    width:100%;
+    color:#444;
+}
+
+table.content_admin_body_table tfoot input.search_init{
+    color:#999;
+}
+
+/*======================= Dinh Dang Phan Noi Dung Table ======================*/
+
+table.content_admin_body_table td{
+    border-right:1px #999 dotted;
+    border-bottom:1px #eaead1 solid;
+    padding:2px 8px;
+    line-height:15px;
+    font-size:11px;
+}
+
+/*---------------------Dinh Dang Cho Phan Selected Check----------------------*/
+table.content_admin_body_table tr.even.row_selected{
+    background-color:#fffacd;
+}
+
+table.content_admin_body_table tr.odd.row_selected{
+    background-color:#fffacd;
+}
+
+table.content_admin_body_table tr.even.row_selected td.sorting_1{
+    background-color:#fffacd;
+}
+
+table.content_admin_body_table tr.odd.row_selected td.sorting_1{
+    background-color:#fffacd;
+}
+
+/*----------------------Dinh Dang Cho Phan Noi Dung---------------------------*/
+table.content_admin_body_table a{
+    cursor:pointer;
+    color:#00F;
+    font-weight:normal;
+}
+
+table.content_admin_body_table tr div.title_table_database,
+table.content_admin_body_table tr div.title_table_database a{
+    cursor:default;
+    color:#FD7400;
+    font-weight:bold;
+}
+
+table.content_admin_body_table tr div.link_table a{
+    cursor:pointer;
+    color:#3380CB;
+    font-weight:bold;
+}
+
+table.content_admin_body_table tr div.title_table_important,
+table.content_admin_body_table tr div.title_table_important a{
+    cursor:default;
+    color:#EA151E;
+    font-weight:bold;
+}
+
+table.content_admin_body_table tr div.details_open{    
+    background:url('images/details_open.png') no-repeat center center;
+    cursor:pointer;
+    height:30px; 
+}
+
+table.content_admin_body_table tr div.details_close{    
+    background:url('images/details_close.png') no-repeat center center;
+    cursor:pointer;
+    height:30px; 
+}
+
+table.content_admin_body_table tr td.details{
+    background-color:#F4F9FE;
+    border-top:2px solid #CCCCCC;
+    border-bottom:2px solid #ebebeb;
+    padding:10px;
+}
+
+/*Chua Biet*/
+table.content_admin_body_table tr.heading2 td{
+    border-bottom:1px solid #aaa;
+}
+
+table.content_admin_body_table tr td.group{
+    background-color:#d1cfd0;
+    border-bottom:2px solid #A19B9E;
+    border-top:2px solid #A19B9E;
+}
+
+/*============================ Dinh Dang Sort Data ===========================*/
+
+/*-------------------------------- Style Default -----------------------------*/
+tr.odd{
+    background-color:#E2E4FF;
+}
+
+tr.even{
+    background-color:white;
+}
+
+tr.odd td.sorting_1{
+    background-color:#D3D6FF;
+}
+
+tr.odd td.sorting_2{
+    background-color:#DADCFF;
+}
+
+tr.odd td.sorting_3{
+    background-color:#E0E2FF;
+}
+
+tr.even td.sorting_1{
+    background-color:#EAEBFF;
+}
+
+tr.even td.sorting_2{
+    background-color:#F2F3FF;
+}
+
+tr.even td.sorting_3{
+    background-color:#F9F9FF;
+}
+
+/*-------------------------------- Style GradeA ------------------------------*/
+tr.odd.gradeA{
+    background-color:#ddffdd;
+}
+
+tr.even.gradeA{
+    background-color:#eeffee;
+}
+
+tr.odd.gradeA td.sorting_1{
+    background-color:#c4ffc4;
+}
+
+tr.odd.gradeA td.sorting_2{
+    background-color:#d1ffd1;
+}
+
+tr.odd.gradeA td.sorting_3{
+    background-color:#d1ffd1;
+}
+
+tr.even.gradeA td.sorting_1{
+    background-color:#d5ffd5;
+}
+
+tr.even.gradeA td.sorting_2{
+    background-color:#e2ffe2;
+}
+
+tr.even.gradeA td.sorting_3{
+    background-color:#e2ffe2;
+}
+
+/*-------------------------------- Style GradeC ------------------------------*/
+tr.odd.gradeC{
+    background-color:#e8e8fd;
+}
+
+tr.even.gradeC{
+    background-color:#f2f2fb;
+}
+
+tr.odd.gradeC td.sorting_1{
+    background-color:#ddddff;
+}
+
+tr.odd.gradeC td.sorting_2{
+    background-color:#d1d1ff;
+}
+
+tr.odd.gradeC td.sorting_3{
+    background-color:#d1d1ff;
+}
+
+tr.even.gradeC td.sorting_1{
+    background-color:#eeeeff;
+}
+
+tr.even.gradeC td.sorting_2{
+    background-color:#e2e2ff;
+}
+
+tr.even.gradeC td.sorting_3{
+    background-color:#e2e2ff;
+}
+
+/*-------------------------------- Style GradeX ------------------------------*/
+tr.odd.gradeX{
+    background-color:#ffdddd;
+}
+
+tr.even.gradeX {
+    background-color:#ffeeee;
+}
+
+tr.odd.gradeX td.sorting_1{
+    background-color:#ffc4c4;
+}
+
+tr.odd.gradeX td.sorting_2{
+    background-color:#ffd1d1;
+}
+
+tr.odd.gradeX td.sorting_3{
+    background-color:#ffd1d1;
+}
+
+tr.even.gradeX td.sorting_1{
+    background-color:#ffd5d5;
+}
+
+tr.even.gradeX td.sorting_2{
+    background-color:#ffe2e2;
+}
+
+tr.even.gradeX td.sorting_3{
+    background-color:#ffe2e2;
+}
+
+/*-------------------------------- Style GradeU ------------------------------*/
+tr.odd.gradeU{
+    background-color:#ddd;
+}
+
+tr.even.gradeU{
+    background-color:#eee;
+}
+tr.odd.gradeU td.sorting_1{
+    background-color:#c4c4c4;
+}
+
+tr.odd.gradeU td.sorting_2{
+    background-color:#d1d1d1;
+}
+
+tr.odd.gradeU td.sorting_3{
+    background-color:#d1d1d1;
+}
+
+tr.even.gradeU td.sorting_1{
+    background-color:#d5d5d5;
+}
+
+tr.even.gradeU td.sorting_2{
+    background-color:#e2e2e2;
+}
+
+tr.even.gradeU td.sorting_3{
+    background-color:#e2e2e2;
+}
+
+/*========================== Dinh Dang Phan Hover ============================*/
+
+table.content_admin_body_table tbody tr.even:hover,
+table.content_admin_body_table tbody tr.even td.highlighted{
+    background-color:#ddffdd;
+}
+
+table.content_admin_body_table tbody tr.odd:hover,
+table.content_admin_body_table tbody tr.odd td.highlighted {
+    background-color:#ddffdd;
+}
+
+
+table.content_admin_body_table tr.even:hover{
+    background-color:#ddffdd;
+}
+
+table.content_admin_body_table tr.even:hover td.sorting_1{
+    background-color:#c4ffc4;
+}
+
+table.content_admin_body_table tr.even:hover td.sorting_2{
+    background-color:#d1ffd1;
+}
+
+table.content_admin_body_table tr.even:hover td.sorting_3{
+    background-color:#d1ffd1;
+}
+
+
+table.content_admin_body_table tr.odd:hover {
+    background-color:#ddffdd;
+}
+
+table.content_admin_body_table tr.odd:hover td.sorting_1 {
+    background-color:#c4ffc4;
+}
+
+table.content_admin_body_table tr.odd:hover td.sorting_2 {
+    background-color:#d1ffd1;
+}
+
+table.content_admin_body_table tr.odd:hover td.sorting_3 {
+    background-color:#d1ffd1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* DataTables sorting
+*/
+
+.sorting_asc{
+    background:url('images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc{
+    background:url('images/sort_desc.png') no-repeat center right;
+}
+
+.sorting{
+    background:url('images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled{
+    background:url('images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled{
+    background:url('images/sort_desc_disabled.png') no-repeat center right;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Misc
+*/
+
+

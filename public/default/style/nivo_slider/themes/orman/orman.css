@@ -1,0 +1,104 @@
+/******************************************************************************
+
+	Ghi chú:hoàn thành ngày 27-07-2015
+	Copyright :Hồ Minh Trí
+	
+*******************************************************************************/
+        
+/*================================= Image Part ===============================*/
+.theme-orman.slider-wrapper{
+    position:relative;
+    margin:0px auto;
+    width:722px;
+    height:337px;
+    background:url(slider.png) no-repeat;
+    padding-top:18px;
+}
+
+.theme-orman .nivoSlider{
+    position:relative;
+    margin-left:77px;
+    width:568px;
+    height:268px;
+    background:url(loading.gif) no-repeat 50% 50%;
+}
+
+.theme-orman .nivoSlider img{
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:568px; /* Make sure your images are the same size */
+    height:268px; /* Make sure your images are the same size */
+}
+
+.theme-orman .nivoSlider a{
+    display:block;
+    border:0px;
+}
+
+.theme-orman .nivo-controlNav{
+    position:absolute;
+    left:50%;
+    bottom:-60px;
+    margin-left:-30px; /* Tweak this to center bullets */
+}
+
+.theme-orman .nivo-controlNav a{
+    float:left;
+    display:block;
+    margin-right:7px;
+    width:10px;
+    height:10px;
+    border:0px;
+    background:url(bullets.png) no-repeat;
+    text-indent:-9999px;
+}
+
+.theme-orman .nivo-controlNav a.active{
+    background-position:0px -10px;
+}
+
+.theme-orman .nivo-directionNav a{
+    display:block;
+    top:40px;
+    width:25px;
+    height:200px;
+    border:0px;
+    background:url(arrows.png) no-repeat 0% 50%;
+    text-indent:-9999px;
+}
+
+.theme-orman a.nivo-nextNav{
+    right:-40px;
+    background-position:100% 50%;
+    padding-right:20px;
+}
+
+.theme-orman a.nivo-prevNav{
+    left:-40px;
+    padding-left:20px;
+}
+
+.theme-orman .nivo-caption{
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+.theme-orman .nivo-caption a{
+    border-bottom:1px dotted #fff;
+    color:#fff;
+}
+
+.theme-orman .nivo-caption a:hover{ 
+    color:#fff;
+}
+
+.theme-orman .ribbon{
+    position:absolute;
+    z-index:300;
+    top:-3px;
+    left:56px;
+    width:111px;
+    height:111px;
+    background:url(ribbon.png) no-repeat;
+}

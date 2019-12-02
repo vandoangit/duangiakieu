@@ -1,0 +1,181 @@
+/*******************************************************************************
+ 
+ Ghi chú:hoàn thành ngày 27-07-2015
+ Copyright :Hồ Minh Trí
+ 
+ ******************************************************************************/
+
+/*=============================== Main Marquee ===============================*/ 
+.simply-scroll-container{ /* Container DIV - automatically generated */
+    position:relative;
+}
+
+/*=============================== Body Marquee ===============================*/ 
+.simply-scroll-clip{ /* Clip DIV - automatically generated */
+    position:relative;
+    overflow:hidden;
+}
+
+/*=============================== List Marquee ===============================*/ 
+.simply-scroll-list{ /* UL/OL/DIV - the element that simplyScroll is inited on */
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    overflow:hidden;
+}
+
+/*------------------------------- Item Marquee -------------------------------*/
+.simply-scroll-list li{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+/*----------------------------- Item Marquee Img -----------------------------*/
+.simply-scroll-list li img{
+    display:block;
+    border:none;
+}
+
+/*============================== Button Marquee ==============================*/ 
+.simply-scroll-btn{
+    position:absolute;
+    z-index:3;
+    width:42px;
+    height:44px;
+    background-image:url(buttons.png);
+    cursor:pointer;
+}
+
+/*---------------------------- Button Marquee Left ---------------------------*/
+.simply-scroll-btn-left{
+    left:6px;
+    bottom:6px;
+    background-position:0px -44px;
+}
+
+.simply-scroll-btn-left.disabled{
+    background-position:0px 0px !important;
+}
+
+.simply-scroll-btn-left:hover, .simply-scroll-btn-left:focus{
+    background-position:0px -88px;
+}
+
+/*--------------------------- Button Marquee Right ---------------------------*/
+.simply-scroll-btn-right{
+    right:6px;
+    bottom:6px;
+    background-position:-84px -44px;
+}
+
+.simply-scroll-btn-right.disabled{
+    background-position:-84px 0px !important;
+}
+
+.simply-scroll-btn-right:hover, .simply-scroll-btn-right:focus{
+    background-position:-84px -88px;
+}
+
+/*----------------------------- Button Marquee Up ----------------------------*/
+.simply-scroll-btn-up{
+    top:6px;
+    right:6px;
+    background-position:-126px -44px;
+}
+
+.simply-scroll-btn-up.disabled{
+    background-position:-126px 0px !important;
+}
+
+.simply-scroll-btn-up:hover, .simply-scroll-btn-up:focus{
+    background-position:-126px -88px;
+}
+
+/*---------------------------- Button Marquee Down ---------------------------*/
+.simply-scroll-btn-down{
+    right:6px;
+    bottom:6px;
+    background-position:-42px -44px;
+}
+
+.simply-scroll-btn-down.disabled{
+    background-position:-42px 0px !important;
+}
+
+.simply-scroll-btn-down:hover, .simply-scroll-btn-down:focus{
+    background-position:-42px -88px;
+}
+
+/*--------------------------- Button Marquee Pause ---------------------------*/
+.simply-scroll-btn-pause{
+    right:6px;
+    bottom:6px;
+    background-position:-168px -44px;
+}
+
+.simply-scroll-btn-pause:hover, .simply-scroll-btn-pause:focus{
+    background-position:-168px -88px;
+}
+
+.simply-scroll-btn-pause.active{
+    background-position:-84px -44px;
+}
+
+.simply-scroll-btn-pause.active:hover, .simply-scroll-btn-pause.active:focus{
+    background-position:-84px -88px;
+}
+
+/*=========================== Style Default Marquee ==========================*/
+/*
+    .simply-scroll is default
+*/
+
+.simply-scroll{ /* Customisable base class for style override DIV */
+    overflow:hidden;
+}
+
+.simply-scroll .simply-scroll-clip{
+    z-index:2;
+    width:193px;
+    height:260px;
+}
+
+.simply-scroll .simply-scroll-list{
+    position:absolute;
+    z-index:1;
+    top:0px;
+    left:0px;
+    width:100%;
+    overflow:hidden;
+}
+
+.simply-scroll .simply-scroll-list li{
+    overflow:hidden;
+}
+
+/*========================== Style Vertical Marquee ==========================*/
+/*
+    .vert is default
+*/
+
+/*------------------------------- Main Marquee -------------------------------*/
+.vertical{ /* wider than clip to position buttons to side */
+    width:100%;
+    overflow:hidden;
+}
+
+/*------------------------------- Body Marquee -------------------------------*/
+.vertical .simply-scroll-clip{
+    width:100%;
+    height:100%;
+}
+
+/*------------------------------- List Marquee -------------------------------*/
+.vertical .simply-scroll-list{}
+
+/*------------------------------- Item Marquee -------------------------------*/
+.vertical .simply-scroll-list li{
+    float:left; 
+    overflow:hidden;
+}

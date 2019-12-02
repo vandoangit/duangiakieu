@@ -1,0 +1,126 @@
+/*******************************************************************************
+
+	Ghi chú:hoàn thành ngày 28-07-2015
+	Copyright :Hồ Minh Trí
+	
+*******************************************************************************/
+
+/*================================= Image Part ===============================*/        
+.theme-default .nivoSlider {
+    position:relative;
+    width:100%;
+    height:auto;
+    background:#FFF url(loading.gif) no-repeat 50% 50%;
+}
+
+/*------------------------------------- Img ----------------------------------*/
+.theme-default .nivoSlider img{
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.theme-default .nivoSlider a{
+    display:block;
+    border:0px;
+}
+
+/*----------------------------------- Caption --------------------------------*/
+.theme-default .nivo-caption{
+    font-size:16px;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    color:#0d0d0d;
+}
+
+.theme-default .nivo-caption a{
+    color:#0d0d0d;
+}
+
+.theme-default .nivo-caption a:hover{ 
+    color:#0d0d0d;
+}
+
+/*------------------------ Direction Nav (Next & Prev) -----------------------*/
+.theme-default .nivo-directionNav a{
+    display:block;
+    width:30px;
+    height:30px;
+    background:url(arrows.png) no-repeat;
+    border:0px;
+    font-size:0px;
+}
+
+.theme-default a.nivo-nextNav{
+    background-position:-30px 0;
+    right:15px; 
+}
+
+.theme-default a.nivo-prevNav{
+    left:15px;
+}
+
+/*================================ Control Part ==============================*/
+/*--------------------------- Control Nav (1,2,3...) -------------------------*/
+.theme-default .nivo-controlNav{
+    text-align:center;
+    padding:2px 0px;
+    /*
+    margin-bottom:10px;
+    height:22px;
+    padding:4px 0px 0px 650px;
+    */
+}
+
+.theme-default .nivo-controlNav a{    
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:url(bullets.png) no-repeat;
+    text-indent:-9999px;
+    border:0px;
+    margin:0px 2px;
+    /*    
+    float:left;
+    display:block;
+    width:30px;
+    height:25px;
+    border:0px;
+    line-height:25px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#a6dffd;
+    */
+}
+
+.theme-default .nivo-controlNav a.active{
+    background-position:0 -22px;
+    /*
+    background:url(bullets_active.png) no-repeat;
+    color:#FFFFFF;
+    */
+}
+
+
+
+
+
+
+
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	width:100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+	width:auto;
+	height:auto;
+	background:none;
+	margin-bottom:5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+	display:block;
+	width:120px;
+	height:auto;
+}
