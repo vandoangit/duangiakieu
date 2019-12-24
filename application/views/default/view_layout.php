@@ -94,240 +94,205 @@ $url_default_template=base_url().DEFAULT_DIR_TEMPLATE; ?>
 </head>
 <body>
 <div class="frog"></div>
-<header>
-    <div class="fixed-top">
-        <div class="fladno" style='background-color: #024D86'>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-5 col-sm-2">
-                        <a class="logos" href="http://hamubay.vn"><img class='img-responsive '
-                                                                       src='http://hamubay.vn/uploads/11-2018/logo_hamubay.png'
-                                                                       alt='logo_hamubay' title=''/></a>
-                    </div>
-                    <div class="col-xs-7 col-sm-10">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle visible-xs visible-sm visible-md hidden-lg">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="hidden-xs hidden-sm text-right">
-                            <div class="block-menu">
-                                <nav class="main-menu" role="navigation">
-                                    <ul class="nav-menu">
-                                        <li class=""><a href="http://hamubay.vn/#tong-quan">Tổng quan</a></li>
-                                        <li class=""><a href="http://hamubay.vn/#"></a></li>
-                                        <li class=""><a href="http://hamubay.vn/#vi-tri">Vị trí</a></li>
-                                        <li class=""><a href="http://hamubay.vn/#mat-bang">Mặt bằng</a></li>
-                                        <li class=""><a href="http://hamubay.vn/#san-pham">Tiện ích</a></li>
-                                        <li class="active "><a href="http://hamubay.vn/tin-tuc-su-kien/">Tin tức - sự
-                                                kiện</a></li>
-                                        <li class=""><a href="http://hamubay.vn/#lien-he">Liên hệ</a></li>
-                                    </ul>
-                                </nav><!-- /.navbar-main-menu -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--
-                    <a href=""><img alt="VietNam" src="/images/vn.png" /></a>
-                    <a href=""><img alt="English" src="/images/en.png" /></a>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="main-menu-mobile" class="nav-menu-mobile visible-xs visible-sm hidden-md hidden-lg">
-        <ul class="nav-menu">
-            <li class=""><a href="http://hamubay.vn/#tong-quan">Tổng quan</a></li>
-            <li class=""><a href="http://hamubay.vn/#"></a></li>
-            <li class=""><a href="http://hamubay.vn/#vi-tri">Vị trí</a></li>
-            <li class=""><a href="http://hamubay.vn/#mat-bang">Mặt bằng</a></li>
-            <li class=""><a href="http://hamubay.vn/#san-pham">Tiện ích</a></li>
-            <li class="active "><a href="http://hamubay.vn/tin-tuc-su-kien/">Tin tức - sự kiện</a></li>
-            <li class=""><a href="http://hamubay.vn/#lien-he">Liên hệ</a></li>
-        </ul>
-        <span class="btn-close-menu"><i class="fa fa-times" aria-hidden="true"></i></span>
-    </div>
-</header>
+<?php $this->load->view($template_view_menu_header,$data_menu_header); ?>
 <main id="main-content" class='main-sub'>
     <div class="block-sub block-subpost">
-        <div class="container">
+        <div class="container main-product-list">
             <div class="row">
                 <div id="tin-tuc" class="block-post">
-                    <div class="col-md-3 padding0 hidden-xs hidden-sm">
-                        <div id="pass-height">
-                            <div class="sidebar-right">
-                                <div class="sidebar-title">
-                                    <h3 class="text-uppercase">Tin tức nổi bật</h3>
-                                </div>
-                                <div class="sidebar-content">
-                                    <div class="sidebar-block-news">
-                                        <div class="sidebar-img">
-                                            <a href="http://hamubay.vn/thong-tin-mo-ban-du-an-hamubay.html"><img
-                                                        class='img-responsive '
-                                                        src='http://hamubay.vn/uploads/11-2018/hinh-12.jpg'
-                                                        alt='hinh-12' title='THÔNG TIN MỞ BÁN DỰ ÁN Hamubay'/></a>
-                                        </div>
-                                        <div class="sidebar-title-item">
-                                            <a href="http://hamubay.vn/thong-tin-mo-ban-du-an-hamubay.html">THÔNG TIN MỞ
-                                                BÁN DỰ ÁN Hamubay</a>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block-news">
-                                        <div class="sidebar-img">
-                                            <a href="http://hamubay.vn/co-hoi-vang-dau-tu-du-an-hamubay.html"><img
-                                                        class='img-responsive '
-                                                        src='http://hamubay.vn/uploads/11-2018/hinh-13.jpg'
-                                                        alt='hinh-13' title='Cơ hội vàng đầu tư dự án Hamubay'/></a>
-                                        </div>
-                                        <div class="sidebar-title-item">
-                                            <a href="http://hamubay.vn/co-hoi-vang-dau-tu-du-an-hamubay.html">Cơ hội
-                                                vàng đầu tư dự án Hamubay</a>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block-news">
-                                        <div class="sidebar-img">
-                                            <a href="http://hamubay.vn/tiem-nang-phat-trien-du-lich-tam-co-the-gioi.html"><img
-                                                        class='img-responsive '
-                                                        src='http://hamubay.vn/uploads/11-2018/hinh-14.jpg'
-                                                        alt='hinh-14'
-                                                        title='TIỀM NĂNG PHÁT TRIỂN DU LỊCH TẦM CỠ THẾ GIỚI'/></a>
-                                        </div>
-                                        <div class="sidebar-title-item">
-                                            <a href="http://hamubay.vn/tiem-nang-phat-trien-du-lich-tam-co-the-gioi.html">TIỀM
-                                                NĂNG PHÁT TRIỂN DU LỊCH TẦM CỠ THẾ GIỚI</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="banner_left">
-                            <h2 style="font-size: 18px;font-weight: bold;padding: 10px 0;text-align: center;">Đăng ký
-                                nhận thông tin dự án</h2>
-                            <div class="block-form">
-                                <form action="" method="post" class="form_contact" style="padding: 10px 0;">
-                                    <input class="input_form" type="hidden" name="func" value="req_submit"/>
-                                    <div class="col-sm-12">
-                                        <div class="input-form" id="check-txtName">
-                                            <input id="txtName" onblur="validateForm('txtName')" required=""
-                                                   name="txtName" type="text" placeholder="Họ và tên"/>
-                                            <i class="val fa" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="input-form" id="check-txtEmail">
-                                            <input id="txtEmail" onblur="validateForm('txtEmail')" required=""
-                                                   name="txtEmail" type="text" placeholder="Email"/>
-                                            <i class="val fa" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="input-form" id="check-txtTel">
-                                            <input id="txtTel" onblur="validateForm('txtTel')" required="" name="txtTel"
-                                                   type="text" placeholder="Số điện thoại"/>
-                                            <i class="val fa" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <!--
-                                    <div class="col-sm-12">
-                                            <input style="width: 96px;color: #000;padding: 12px;border-radius: 5px;border: 1px solid #ccc;" required="" id="captcha" placeholder="Mã bảo vệ" class="input_captcha" name="6_letters_code" type="text"/>
-                                            <span style="padding: 0 5px;"><a class="img-responsive btn-re" style="color: #BC4949; display: inline-block" href='javascript: refreshCaptcha();'><i style="color: #fff;" class="fa fa-refresh" aria-hidden="true"></i></a></span>
-                                            <span style="display: inline-block;position: relative;top: 14px;" class="ma_captcha"><img class="img-responsive" src="/app/packages/captcha/captcha_code_file.php?rand=" id="captchaimg" /></span>
-                                    </div>
-                                    -->
-                                    <div class="col-sm-12">
-                                        <div class="input-form">
-                                            <input class="btn btn-send" name="" type="submit" class="text-uppercase"
-                                                   value="ĐĂNG KÝ"/>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <script type="text/javascript">
-                              //function refreshCaptcha()
-                              //{
-                              // var img = document.images['captchaimg'];
-                              // img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
-                              //}
-                            </script>
-                        </div>
+                    <div class="col-sm-12" style="margin-bottom: 10px;">
+                        <ul class='breadcrumb'>
+                            <li><a href='http://hamubay.vn'><i class='fa fa-home' aria-hidden='true'></i></a></li>
+                            <li><a href='http://hamubay.vn/tin-tuc-su-kien/'>MATRIX</a></li>
+                        </ul>
                     </div>
-                    <div class="col-sm-12 col-md-9">
-                        <div class="col-sm-12">
-                            <ul class='breadcrumb'>
-                                <li><a href='http://hamubay.vn'><i class='fa fa-home' aria-hidden='true'></i></a></li>
-                                <li><a href='http://hamubay.vn/tin-tuc-su-kien/'>Tin tức - sự kiện</a></li>
-                            </ul>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-3">
+                            <div class="span3 block_product">
+                                <div class="product productitem_439">
+                                    <div class="row-fluid image fadeInDown animated" style="visibility: visible;">
+                                        <div class="image_block">
+                                            <a href="/san-pham/mo-dac-chung-matrix/mo-mos2-molybdenum-disulfite/grease-mos2-xxtra.html">
+                                                <img class="jshop_img" src="https://matrixvn.com/components/com_jshopping/files/img_products/thumb_mos2.jpg" alt="Grease MoS2 Xxtra" title="Grease MoS2 Xxtra">
+                                            </a>
+                                            <div class="content">
+                                                <div class="description">
+                                                    <div class="introtext">
+                                                        Mỡ chịu nhiệt chứa mos2, màu đen, NLGI #2, phù hợp cho các ứ...										</div>
+                                                    <a class="btn button_detail" href="/san-pham/mo-dac-chung-matrix/mo-mos2-molybdenum-disulfite/grease-mos2-xxtra.html">Chi tiết</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="count_commentar">
+                                    Comments (0)        </div> -->
+                                    </div>
+                                    <div class="row-fluid fadeInDown animated" style="visibility: visible;">
+                                        <div class="text-box">
+                                            <div class="name">
+                                                <a href="/san-pham/mo-dac-chung-matrix/mo-mos2-molybdenum-disulfite/grease-mos2-xxtra.html">Grease MoS2 Xxtra</a>
+                                            </div>
+
+
+                                            <div class="price">
+                                            </div>
+                                            <table class="review_mark"><tbody><tr><td><div class="stars_no_active" style="width:80px"><div class="stars_active" style="width:0px"></div></div></td></tr></tbody></table>
+                                            <div class="extra_fields">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="buttons">
+                                        <a class="cart-detail jutooltip" href="/gio-hang/add.html?to=wishlist&amp;category_id=224&amp;product_id='.=439">
+                                            <i class="icon-heart"></i>
+                                            <span class="hidden">Add to wishlist</span>
+                                        </a>
+                                        <a class="button_detail jutooltip" href="/san-pham/mo-dac-chung-matrix/mo-mos2-molybdenum-disulfite/grease-mos2-xxtra.html"><i class=" icon-eye-open"></i><span class="hidden">Chi tiết</span></a>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12">
-                            <div style="padding: 15px; background-color: #F5F5F5; height: 100vh;">
-                                <div class="items">
-                                    <div class="image">
-                                        <a href="http://hamubay.vn/thong-tin-mo-ban-du-an-hamubay.html"><img
-                                                    class='img-responsive '
-                                                    src='http://hamubay.vn/uploads/11-2018/hinh-12.jpg' alt='hinh-12'
-                                                    title='THÔNG TIN MỞ BÁN DỰ ÁN Hamubay'/></a>
-                                    </div>
-                                    <div class="detail">
-                                        <div class="box-title">
-                                            <a href="http://hamubay.vn/thong-tin-mo-ban-du-an-hamubay.html"><h4
-                                                        class="title">THÔNG TIN MỞ BÁN DỰ ÁN Hamubay</h4></a>
+                        <div class="col-sm-3">
+                            <div class="span3 block_product">
+                                <div class="product productitem_438">
+                                    <div class="row-fluid image fadeInDown animated" style="visibility: visible;">
+                                        <div class="image_block">
+                                            <a href="/san-pham/nha-san-xuat-khac/dau-silicon-nhap-khau-thai-lan/element-14.html">
+                                                <img class="jshop_img" src="https://matrixvn.com/components/com_jshopping/files/img_products/thumb_PDMS_350_-_PDMS_1000_-__Gia_Huy_Warehouse_02.jpg" alt="Element14" title="Element14">
+                                            </a>
+                                            <div class="content">
+                                                <div class="description">
+                                                    <div class="introtext">
+                                                        Dầu silicon nhập khẩu Thái Lan với nhiều cấp độ nhớt khác nh...										</div>
+                                                    <a class="btn button_detail" href="/san-pham/nha-san-xuat-khac/dau-silicon-nhap-khau-thai-lan/element-14.html">Chi tiết</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="note"><span
-                                                    style=&quot;&quot;color:#008080;&quot;&quot;><strong><span
-                                                            style=&quot;&quot;font-size:16px;&quot;&quot;>Hamubay Phan Thiết</span> </strong></span>được
-                                            thiết kế theo lối khu đ&ocirc; thị chuẩn mực kh&eacute;p k&iacute;n, với
-                                            tổng diện t&iacute;ch 4ha giai đoạn I v&agrave; mặt tiền trải d&agrave;i ...
-                                        </div>
-                                        <div class="text-right"><a style="text-decoration: underline;"
-                                                                   class="text-capitalize"
-                                                                   href="http://hamubay.vn/thong-tin-mo-ban-du-an-hamubay.html">Chi
-                                                tiết <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+
+                                        <!-- <div class="count_commentar">
+                                    Comments (0)        </div> -->
                                     </div>
+                                    <div class="row-fluid fadeInDown animated" style="visibility: visible;">
+                                        <div class="text-box">
+                                            <div class="name">
+                                                <a href="/san-pham/nha-san-xuat-khac/dau-silicon-nhap-khau-thai-lan/element-14.html">Element14</a>
+                                            </div>
+
+
+                                            <div class="price">
+                                            </div>
+                                            <table class="review_mark"><tbody><tr><td><div class="stars_no_active" style="width:80px"><div class="stars_active" style="width:0px"></div></div></td></tr></tbody></table>
+                                            <div class="extra_fields">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="buttons">
+                                        <a class="cart-detail jutooltip" href="/gio-hang/add.html?to=wishlist&amp;category_id=223&amp;product_id='.=438">
+                                            <i class="icon-heart"></i>
+                                            <span class="hidden">Add to wishlist</span>
+                                        </a>
+                                        <a class="button_detail jutooltip" href="/san-pham/nha-san-xuat-khac/dau-silicon-nhap-khau-thai-lan/element-14.html"><i class=" icon-eye-open"></i><span class="hidden">Chi tiết</span></a>
+                                    </div>
+
                                 </div>
-                                <div class="items">
-                                    <div class="image">
-                                        <a href="http://hamubay.vn/co-hoi-vang-dau-tu-du-an-hamubay.html"><img
-                                                    class='img-responsive '
-                                                    src='http://hamubay.vn/uploads/11-2018/hinh-13.jpg' alt='hinh-13'
-                                                    title='Cơ hội vàng đầu tư dự án Hamubay'/></a>
-                                    </div>
-                                    <div class="detail">
-                                        <div class="box-title">
-                                            <a href="http://hamubay.vn/co-hoi-vang-dau-tu-du-an-hamubay.html"><h4
-                                                        class="title">Cơ hội vàng đầu tư dự án Hamubay</h4></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="span3 block_product">
+                                <div class="product productitem_437">
+                                    <div class="row-fluid image fadeInDown animated" style="visibility: visible;">
+                                        <div class="image_block">
+                                            <a href="/san-pham/dau-dac-chung-matrix/dau-bom-chan-khong-an-toan-thuc-pham/foodmax-air-100.html">
+                                                <img class="jshop_img" src="https://matrixvn.com/components/com_jshopping/files/img_products/thumb_43fb9022c97a2e24776b.jpg" alt="Foodmax Air 100" title="Foodmax Air 100">
+                                            </a>
+                                            <div class="content">
+                                                <div class="description">
+                                                    <div class="introtext">
+                                                        Sản phẩm Dầu bơm chân không Foodmax Air 100 có chỉ số độ nhớ...										</div>
+                                                    <a class="btn button_detail" href="/san-pham/dau-dac-chung-matrix/dau-bom-chan-khong-an-toan-thuc-pham/foodmax-air-100.html">Chi tiết</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="note">Với mức gi&aacute; chỉ từ 15 triệu đồng/m2, thanh to&aacute;n
-                                            linh hoạt, <strong>Hamubay Phan Thiết</strong> sở hữu một lợi thế cạnh tranh
-                                            rất lớn so với c&aacute;c dự &aacute;n tương ...
-                                        </div>
-                                        <div class="text-right"><a style="text-decoration: underline;"
-                                                                   class="text-capitalize"
-                                                                   href="http://hamubay.vn/co-hoi-vang-dau-tu-du-an-hamubay.html">Chi
-                                                tiết <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+
+                                        <!-- <div class="count_commentar">
+                                    Comments (0)        </div> -->
                                     </div>
+                                    <div class="row-fluid fadeInDown animated" style="visibility: visible;">
+                                        <div class="text-box">
+                                            <div class="name">
+                                                <a href="/san-pham/dau-dac-chung-matrix/dau-bom-chan-khong-an-toan-thuc-pham/foodmax-air-100.html">Foodmax Air 100</a>
+                                            </div>
+
+
+                                            <div class="price">
+                                            </div>
+                                            <table class="review_mark"><tbody><tr><td><div class="stars_no_active" style="width:80px"><div class="stars_active" style="width:0px"></div></div></td></tr></tbody></table>
+                                            <div class="extra_fields">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="buttons">
+                                        <a class="cart-detail jutooltip" href="/gio-hang/add.html?to=wishlist&amp;category_id=222&amp;product_id='.=437">
+                                            <i class="icon-heart"></i>
+                                            <span class="hidden">Add to wishlist</span>
+                                        </a>
+                                        <a class="button_detail jutooltip" href="/san-pham/dau-dac-chung-matrix/dau-bom-chan-khong-an-toan-thuc-pham/foodmax-air-100.html"><i class=" icon-eye-open"></i><span class="hidden">Chi tiết</span></a>
+                                    </div>
+
                                 </div>
-                                <div class="items">
-                                    <div class="image">
-                                        <a href="http://hamubay.vn/tiem-nang-phat-trien-du-lich-tam-co-the-gioi.html"><img
-                                                    class='img-responsive '
-                                                    src='http://hamubay.vn/uploads/11-2018/hinh-14.jpg' alt='hinh-14'
-                                                    title='TIỀM NĂNG PHÁT TRIỂN DU LỊCH TẦM CỠ THẾ GIỚI'/></a>
-                                    </div>
-                                    <div class="detail">
-                                        <div class="box-title">
-                                            <a href="http://hamubay.vn/tiem-nang-phat-trien-du-lich-tam-co-the-gioi.html">
-                                                <h4 class="title">TIỀM NĂNG PHÁT TRIỂN DU LỊCH TẦM CỠ THẾ GIỚI</h4></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="span3 block_product">
+                                <div class="product productitem_436">
+                                    <div class="row-fluid image fadeInDown animated" style="visibility: visible;">
+                                        <div class="image_block">
+                                            <a href="/san-pham/mo-dac-chung-matrix/mo-chiu-nhiet/grease-inor-m-2.html">
+                                                <img class="jshop_img" src="https://matrixvn.com/components/com_jshopping/files/img_products/thumb_inorm2.jpg" alt="Grease Inor M 2" title="Grease Inor M 2">
+                                            </a>
+                                            <div class="content">
+                                                <div class="description">
+                                                    <div class="introtext">
+                                                        Mỡ chịu nhiệt gốc vô cơ, với hiệu suất làm việc cao, giúp ké...										</div>
+                                                    <a class="btn button_detail" href="/san-pham/mo-dac-chung-matrix/mo-chiu-nhiet/grease-inor-m-2.html">Chi tiết</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="note">Khi n&oacute;i đến <strong>Phan Thiết</strong>, mọi người
-                                            thường sẽ nghĩ đến một địa danh du lịch c&oacute; bề d&agrave;y k&eacute;o d&agrave;i
-                                            từ d&acirc;n tộc Chăm từ xưa, cho đến những ...
-                                        </div>
-                                        <div class="text-right"><a style="text-decoration: underline;"
-                                                                   class="text-capitalize"
-                                                                   href="http://hamubay.vn/tiem-nang-phat-trien-du-lich-tam-co-the-gioi.html">Chi
-                                                tiết <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+
+                                        <!-- <div class="count_commentar">
+                                    Comments (0)        </div> -->
                                     </div>
+                                    <div class="row-fluid fadeInDown animated" style="visibility: visible;">
+                                        <div class="text-box">
+                                            <div class="name">
+                                                <a href="/san-pham/mo-dac-chung-matrix/mo-chiu-nhiet/grease-inor-m-2.html">Grease Inor M 2</a>
+                                            </div>
+
+
+                                            <div class="price">
+                                            </div>
+                                            <table class="review_mark"><tbody><tr><td><div class="stars_no_active" style="width:80px"><div class="stars_active" style="width:0px"></div></div></td></tr></tbody></table>
+                                            <div class="extra_fields">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="buttons">
+                                        <a class="cart-detail jutooltip" href="/gio-hang/add.html?to=wishlist&amp;category_id=206&amp;product_id='.=436">
+                                            <i class="icon-heart"></i>
+                                            <span class="hidden">Add to wishlist</span>
+                                        </a>
+                                        <a class="button_detail jutooltip" href="/san-pham/mo-dac-chung-matrix/mo-chiu-nhiet/grease-inor-m-2.html"><i class=" icon-eye-open"></i><span class="hidden">Chi tiết</span></a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

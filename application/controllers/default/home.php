@@ -25,19 +25,18 @@ class Home extends CI_Controller{
 
 	}
 
-	public function home_index(){
+	public function index1(){
 
 		$this->_arr_data['data_content']['product_prominent']=$this->m_product->product_prominent_front_end('product',$this->my_layout->sess_lang_default,0,21);
 
 		$this->_arr_data['data_content']['info_content']=$this->language->get_data_page_home();
 		$this->_arr_data['template_view_content']=DEFAULT_DIR_ROOT."/view_home_index";
-		//echo '<pre>';
-		//print_r($this->_arr_data);exit;
-		$this->load->view(DEFAULT_DIR_ROOT."/view_layout",$this->_arr_data);
+
+		$this->load->view(DEFAULT_DIR_ROOT."/view_layout1",$this->_arr_data);
 
 	}
 
-	public function home_index_1(){
+	public function index(){
 
 		//List Product Prominent Of Category
 		$this->_arr_data['data_content']['category_product']="";

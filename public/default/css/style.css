@@ -3373,3 +3373,9 @@ font-weight: bold;
 	}
 }
 /*END CSS MOBILE*/
+
+.main-product-list {
+    background: #fff;
+    box-shadow: 1px 11px 23px 3px #ccc;
+    padding: 20px;
+}

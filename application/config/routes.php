@@ -52,7 +52,7 @@ if(!defined('BASEPATH'))
   |
  */
 
-$route['default_controller']=DEFAULT_DIR_ROOT.'/article';
+$route['default_controller']=DEFAULT_DIR_ROOT.'/home';
 $route['404_override']='';
 
 /* ============================ Router Front-End ============================ */
